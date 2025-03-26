@@ -1,4 +1,17 @@
 { "commands": [
-
-]
-}
+  { "hdr": "720", "rax": "723", "cmd": {"22": "C901"}, "freq": 1,
+    "signals": [
+      {"id": "MIATA_TIRE_FL_PRESSURE", "path": "Tires", "fmt": {           "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Front Left Tire Pressure"},
+      {"id": "MIATA_TIRE_FR_PRESSURE", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Front Right Tire Pressure"},
+      {"id": "MIATA_TIRE_RL_PRESSURE", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Rear Left Tire Pressure"},
+      {"id": "MIATA_TIRE_RR_PRESSURE", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Rear Right Tire Pressure"}
+    ]},
+  { "hdr": "720", "rax": "723", "cmd": {"22": "C902"}, "freq": 1,
+    "signals": [
+      {"id": "MIATA_TIRE_FL_TEMP", "path": "Tires", "fmt": {           "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front Left Tire Temperature"},
+      {"id": "MIATA_TIRE_FR_TEMP", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front Right Tire Temperature"},
+      {"id": "MIATA_TIRE_RL_TEMP", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear Left Tire Temperature"},
+      {"id": "MIATA_TIRE_RR_TEMP", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear Right Tire Temperature"}
+    ]}
+  ]
+  }
