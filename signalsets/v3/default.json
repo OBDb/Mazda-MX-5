@@ -1,12 +1,12 @@
 { "commands": [
-{ "hdr": "720", "dbg": true, "cmd": {"22": "C901"}, "freq": 1,
+{ "hdr": "720", "rax": "728", "cmd": {"22": "C901"}, "freq": 1, "dbgfilter": { "to": 2014, "from": 2016 },
   "signals": [
     {"id": "MX5_TP_FL", "path": "Tires", "fmt": {           "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
     {"id": "MX5_TP_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
     {"id": "MX5_TP_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
     {"id": "MX5_TP_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"}
   ]},
-{ "hdr": "720", "dbg": true, "cmd": {"22": "C902"}, "freq": 1,
+{ "hdr": "720", "rax": "728", "cmd": {"22": "C902"}, "freq": 1, "dbgfilter": { "to": 2014, "from": 2016 },
   "signals": [
     {"id": "MX5_TT_FL", "path": "Tires", "fmt": {           "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front left tire Temperature"},
     {"id": "MX5_TT_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front right tire Temperature"},
