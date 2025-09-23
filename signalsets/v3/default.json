@@ -1,8 +1,4 @@
 { "commands": [
-{ "hdr": "720", "dbg": true, "cmd": {"22": "61B1"}, "freq": 1,
-  "signals": [
-    {"id": "MX5_FLV", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "liters" }, "name": "Fuel level"}
-  ]},
 { "hdr": "720", "dbg": true, "cmd": {"22": "C901"}, "freq": 1,
   "signals": [
     {"id": "MX5_TP_FL", "path": "Tires", "fmt": {           "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
@@ -17,13 +13,13 @@
     {"id": "MX5_TT_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear left tire Temperature"},
     {"id": "MX5_TT_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear right tire Temperature"}
   ]},
+{ "hdr": "720", "rax": "728", "cmd": {"22": "61B1"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "MX5_FLV", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "liters" }, "name": "Fuel level"}
+  ]},
 { "hdr": "793", "dbg": true, "cmd": {"22": "D901"}, "freq": 0.25,
   "signals": [
     {"id": "MX5_CC_TGT_DIST", "path": "Cruise control", "fmt": {"bix": 8, "len": 8, "max": 63.75, "div": 4, "unit": "meters" }, "name": "Distance from bumper to target"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0301"}, "freq": 0.25,
-  "signals": [
-    {"id": "MX5_MAP", "path": "Engine", "fmt": { "len": 16, "max": 4, "div": 1000, "unit": "volts" }, "name": "MAP voltage", "description": "A properly functioning sensor should read around 1 to 1.5 volts at idle."}
   ]},
 { "hdr": "7E0", "dbg": true, "cmd": {"22": "0306"}, "freq": 0.25,
   "signals": [
@@ -48,10 +44,6 @@
 { "hdr": "7E0", "dbg": true, "cmd": {"22": "03FB"}, "freq": 0.25,
   "signals": [
     {"id": "MX5_EGR_OPEN_PERC", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Exhaust gas recirculation open"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0415"}, "freq": 1,
-  "signals": [
-    {"id": "MX5_EOP", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "kilopascal" }, "name": "Engine oil pressure"}
   ]},
 { "hdr": "7E0", "dbg": true, "cmd": {"22": "042C"}, "freq": 0.25,
   "signals": [
@@ -101,9 +93,41 @@
   "signals": [
     {"id": "MX5_OIL_CHANGE_DIST_MAX", "path": "Fluids", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Max distance to oil change"}
   ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "1310"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0301"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
+  "signals": [
+    {"id": "MX5_MAP", "path": "Engine", "fmt": { "len": 16, "max": 4, "div": 1000, "unit": "volts" }, "name": "MAP voltage", "description": "A properly functioning sensor should read around 1 to 1.5 volts at idle."}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0415"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
+  "signals": [
+    {"id": "MX5_EOP", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "kilopascal" }, "name": "Engine oil pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11BD"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_TRANS_T_V1", "path": "Transmission", "fmt": { "len": 16, "max": 60.6875, "mul": 9, "div": 80, "add": 32, "unit": "fahrenheit" }, "name": "Transmission temperature v1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1310"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_EOT", "path": "Engine", "fmt": { "len": 16, "max": 615.35, "min": -40, "div": 100, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "17B3"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_TRANS_T_V2", "path": "Transmission", "fmt": { "len": 8, "max": 371.4, "min": -57, "mul": 42, "div": 25, "add": -57, "unit": "fahrenheit" }, "name": "Transmission temperature v2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1E1C"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_TRANS_T_V3", "path": "Transmission", "fmt": { "len": 16, "max": 60.6875, "mul": 9, "div": 80, "add": 32, "unit": "fahrenheit" }, "name": "Transmission temperature v3"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "11BD"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_TRANS_T_V4", "path": "Transmission", "fmt": { "len": 16, "max": 60.6875, "mul": 9, "div": 80, "add": 32, "unit": "fahrenheit" }, "name": "Transmission temperature v4"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "17B3"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_TRANS_T_V5", "path": "Transmission", "fmt": { "len": 8, "max": 371.4, "min": -57, "mul": 42, "div": 25, "add": -57, "unit": "fahrenheit" }, "name": "Transmission temperature v5"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1E1C"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_TRANS_T_V6", "path": "Transmission", "fmt": { "len": 16, "max": 60.6875, "mul": 9, "div": 80, "add": 32, "unit": "fahrenheit" }, "name": "Transmission temperature v6"}
   ]}
 ]
 }
