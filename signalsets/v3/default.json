@@ -3,19 +3,19 @@
   "signals": [
     {"id": "MX5_FLV", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "liters" }, "name": "Fuel level"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "C901"}, "freq": 1, "dbgfilter": { "to": 2014, "from": 2016 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "C901"}, "freq": 1, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014], "from": 2016 },
   "signals": [
-    {"id": "MX5_TP_FL", "path": "Tires", "fmt": {           "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "MX5_TP_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
-    {"id": "MX5_TP_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "MX5_TP_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"}
+    {"id": "MX5_TP_FL", "path": "Tires", "fmt": {           "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "MX5_TP_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
+    {"id": "MX5_TP_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "MX5_TP_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "C902"}, "freq": 1, "dbgfilter": { "to": 2014, "from": 2016 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "C902"}, "freq": 1, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014], "from": 2016 },
   "signals": [
-    {"id": "MX5_TT_FL", "path": "Tires", "fmt": {           "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front left tire Temperature"},
-    {"id": "MX5_TT_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front right tire Temperature"},
-    {"id": "MX5_TT_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear left tire Temperature"},
-    {"id": "MX5_TT_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear right tire Temperature"}
+    {"id": "MX5_TT_FL", "path": "Tires", "fmt": {           "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front left tire temperature"},
+    {"id": "MX5_TT_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front right tire temperature"},
+    {"id": "MX5_TT_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear left tire temperature"},
+    {"id": "MX5_TT_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear right tire temperature"}
   ]},
 { "hdr": "793", "dbg": true, "cmd": {"22": "D901"}, "freq": 0.25,
   "signals": [
@@ -128,6 +128,205 @@
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1E1C"}, "freq": 1,
   "signals": [
     {"id": "MX5_TRANS_T_V6", "path": "Transmission", "fmt": { "len": 16, "max": 60.6875, "mul": 9, "div": 80, "add": 32, "unit": "fahrenheit" }, "name": "Transmission temperature v6"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0200"}, "freq": 1,
+  "signals": [
+    {"id": "DTC_CNT", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "# of DTCs"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0202"}, "freq": 1,
+  "signals": [
+    {"id": "DTC_CNTD", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "# of DTCs (on demand)"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0900"}, "freq": 1,
+  "signals": [
+    {"id": "MAP_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "mul": 0.001, "unit": "volts" }, "name": "Manifold Absolute Pressure Voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0914"}, "freq": 1,
+  "signals": [
+    {"id": "APP1_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "mul": 0.001, "unit": "volts" }, "name": "APP Sensor 1 Voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0915"}, "freq": 1,
+  "signals": [
+    {"id": "APP2_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "mul": 0.001, "unit": "volts" }, "name": "APP Sensor 2 Voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0917"}, "freq": 1,
+  "signals": [
+    {"id": "TP1_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "mul": 0.001, "unit": "volts" }, "name": "Throttle Position 1 Voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0918"}, "freq": 1,
+  "signals": [
+    {"id": "TP2_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "mul": 0.001, "unit": "volts" }, "name": "Throttle Position 2 Voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "091A"}, "freq": 1,
+  "signals": [
+    {"id": "ETC_DSD_DEG", "path": "Engine", "fmt": { "len": 16, "max": 128, "mul": 0.001953125, "unit": "degrees" }, "name": "Throttle Control Desired (degrees)"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "093C"}, "freq": 1,
+  "signals": [
+    {"id": "ETC_ACT_DEG", "path": "Engine", "fmt": { "len": 16, "max": 128, "mul": 0.001953125, "unit": "degrees" }, "name": "Throttle Position Actual (degrees)"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0967"}, "freq": 1,
+  "signals": [
+    {"id": "FAN3_SW", "path": "Engine", "fmt": { "len": 1, "bix": 2, "max": 1, "unit": "offon" }, "name": "Cooling Fan Relay Control"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0968"}, "freq": 1,
+  "signals": [
+    {"id": "GEN_CHRGLP", "path": "Engine", "fmt": { "len": 1, "bix": 0, "max": 1, "unit": "offon" }, "name": "Generator Warning Light"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "096E"}, "freq": 1,
+  "signals": [
+    {"id": "IDLE", "path": "Engine", "fmt": { "len": 16, "max": 16383.75, "mul": 0.25, "unit": "rpm" }, "name": "Idle Speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "097C"}, "freq": 1,
+  "signals": [
+    {"id": "GEN_DSD_V", "path": "Engine", "fmt": { "len": 16, "max": 32, "mul": 0.00048828125, "unit": "volts" }, "name": "Generator Voltage Desired"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "098E"}, "freq": 1,
+  "signals": [
+    {"id": "EGRP_STEPS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "EGR Purge Steps"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1101"}, "freq": 1,
+  "signals": [
+    {"id": "ACCS_SW", "path": "Engine", "fmt": { "len": 1, "bix": 0, "max": 1, "unit": "offon" }, "name": "A/C Relay"},
+    {"id": "BOO_SW", "path": "Engine", "fmt": { "len": 1, "bix": 1, "max": 1, "unit": "offon" }, "name": "Brake On/Off Switch"},
+    {"id": "INGEAR_SW", "path": "Transmission", "fmt": { "len": 1, "bix": 3, "max": 1, "unit": "offon" }, "name": "In Gear Switch"},
+    {"id": "PSP_SW", "path": "Engine", "fmt": { "len": 1, "bix": 7, "max": 1, "unit": "offon" }, "name": "Power Stearing Position Switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1103"}, "freq": 1,
+  "signals": [
+    {"id": "FAN1_SW", "path": "Engine", "fmt": { "len": 1, "bix": 2, "max": 1, "unit": "offon" }, "name": "Cooling Fan Relay Control"},
+    {"id": "FAN2_SW", "path": "Engine", "fmt": { "len": 1, "bix": 3, "max": 1, "unit": "offon" }, "name": "Cooling Fan Relay Control"},
+    {"id": "IMRC_SW", "path": "Engine", "fmt": { "len": 1, "bix": 4, "max": 1, "unit": "offon" }, "name": "Intake Manifold Runner Control"},
+    {"id": "MIL_SW", "path": "DTCs", "fmt": { "len": 1, "bix": 5, "max": 1, "unit": "offon" }, "name": "Malfunction Indicator Lamp"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1104"}, "freq": 1,
+  "signals": [
+    {"id": "AC_REQ_SW", "path": "Engine", "fmt": { "len": 1, "bix": 0, "max": 1, "unit": "offon" }, "name": "A/C Refrigerant Pressure Switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "114A"}, "freq": 1,
+  "signals": [
+    {"id": "IAT_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "mul": 0.001, "unit": "volts" }, "name": "Intake Air Temp Voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "114D"}, "freq": 1,
+  "signals": [
+    {"id": "ECT_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "mul": 0.001, "unit": "volts" }, "name": "Engine Coolant Temp Voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1169"}, "freq": 1,
+  "signals": [
+    {"id": "TPCT", "path": "Engine", "fmt": { "len": 16, "max": 1023.984375, "mul": 0.015625, "unit": "volts" }, "name": "Throttle Position Closed Voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1174"}, "freq": 1,
+  "signals": [
+    {"id": "O2S12_A_V", "path": "Engine", "fmt": { "len": 16, "max": 64, "mul": 0.0009765625, "unit": "volts" }, "name": "O2 Sensor 1-2 Voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1177"}, "freq": 1,
+  "signals": [
+    {"id": "MAF_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "mul": 0.001, "unit": "volts" }, "name": "Mass Air-Flow Voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1340"}, "freq": 1,
+  "signals": [
+    {"id": "APP", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 0.3921568627, "unit": "percent" }, "name": "Accel Pedal Position (full range)"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1410"}, "freq": 1,
+  "signals": [
+    {"id": "FUEL_PW", "path": "Fuel", "fmt": { "len": 16, "max": 524.288, "mul": 0.0079999994, "unit": "scalar" }, "name": "Injector Fuel Pulse Width"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "160D"}, "freq": 1,
+  "signals": [
+    {"id": "IMTV_SW", "path": "Engine", "fmt": { "len": 1, "bix": 1, "max": 1, "unit": "offon" }, "name": "Variable Intake Air Control"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1631"}, "freq": 1,
+  "signals": [
+    {"id": "O2S_HTR11_SW", "path": "Engine", "fmt": { "len": 1, "bix": 0, "max": 1, "unit": "offon" }, "name": "O2 Sensor 1 Heater Control (Front)"},
+    {"id": "O2S_HTR12_SW", "path": "Engine", "fmt": { "len": 1, "bix": 1, "max": 1, "unit": "offon" }, "name": "O2 Sensor 2 Heater Control (Rear)"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "163E"}, "freq": 1,
+  "signals": [
+    {"id": "O2S12_FT", "path": "Engine", "fmt": { "len": 16, "max": 800, "mul": 0.012207031, "unit": "percent" }, "name": "Rear O2 Sensor Fuel Trim"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16B3"}, "freq": 1,
+  "signals": [
+    {"id": "BARO_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "mul": 0.001, "unit": "volts" }, "name": "BARO Sensor Voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16CD"}, "freq": 1,
+  "signals": [
+    {"id": "VT_ACT", "path": "Engine", "fmt": { "len": 16, "max": 4095, "mul": 0.0625, "unit": "degrees" }, "name": "Valve Timing Actual"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16CE"}, "freq": 1,
+  "signals": [
+    {"id": "VT_DIFF", "path": "Engine", "fmt": { "len": 16, "max": 4095, "mul": 0.0625, "unit": "degrees" }, "name": "Valve Timing Error"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16CF"}, "freq": 1,
+  "signals": [
+    {"id": "VT_DUTY", "path": "Engine", "fmt": { "len": 16, "max": 200, "mul": 0.003051757812, "unit": "percent" }, "name": "Valve Timing OCV Control Duty"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16E8"}, "freq": 1,
+  "signals": [
+    {"id": "GEN_FC", "path": "Engine", "fmt": { "len": 16, "max": 200, "mul": 0.003051757812, "unit": "percent" }, "name": "Generator Field Coil Control Duty"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16E9"}, "freq": 1,
+  "signals": [
+    {"id": "GEN_V", "path": "Engine", "fmt": { "len": 16, "max": 8191.875, "mul": 0.125, "unit": "volts" }, "name": "Generator Output Voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16F0"}, "freq": 1,
+  "signals": [
+    {"id": "TIRESIZE", "path": "Vehicle", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Tire Revolutions Per Mile"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1706"}, "freq": 1,
+  "signals": [
+    {"id": "HIDET_SW", "path": "Engine", "fmt": { "len": 1, "bix": 0, "max": 1, "unit": "offon" }, "name": "High Detonation Switch"},
+    {"id": "LAMBDA_MOD_SW", "path": "Engine", "fmt": { "len": 1, "bix": 6, "max": 1, "unit": "offon" }, "name": "Lambda Modification Switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1718"}, "freq": 1,
+  "signals": [
+    {"id": "FP_RELAY_SW", "path": "Fuel", "fmt": { "len": 1, "bix": 0, "max": 1, "unit": "offon" }, "name": "Fuel Pump Relay Switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1746"}, "freq": 1,
+  "signals": [
+    {"id": "KNOCKR", "path": "Engine", "fmt": { "len": 8, "max": 90, "mul": 0.3521126761, "unit": "degrees" }, "name": "Knock Retard"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "176B"}, "freq": 1,
+  "signals": [
+    {"id": "LDP_VSL_DV", "path": "Emissions", "fmt": { "len": 16, "max": 0.35, "mul": 0.0000053405761, "unit": "scalar" }, "name": "EVAP LDP Very Small Leak Detect Value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "179A"}, "freq": 1,
+  "signals": [
+    {"id": "LDP_VSL_SV", "path": "Emissions", "fmt": { "len": 16, "max": 0.35, "mul": 0.0000053405761, "unit": "scalar" }, "name": "EVAP LDP Very Small Leak Safe Value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F4"}, "freq": 1,
+  "signals": [
+    {"id": "LDP_MON_current", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.00000056098486, "unit": "amps" }, "name": "EVAP LDP Monitoring Current"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F5"}, "freq": 1,
+  "signals": [
+    {"id": "LDP_REF_current", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.00000056098486, "unit": "amps" }, "name": "EVAP LDP Reference Current"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F7"}, "freq": 1,
+  "signals": [
+    {"id": "LDP_IDL_current", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.00000056098486, "unit": "amps" }, "name": "EVAP LDP Idle Current"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F8"}, "freq": 1,
+  "signals": [
+    {"id": "LDP_SL_DV", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.00000056098486, "unit": "amps" }, "name": "EVAP LDP Small Leak Detect Value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F9"}, "freq": 1,
+  "signals": [
+    {"id": "LDP_VSL_FV", "path": "Emissions", "fmt": { "len": 16, "max": 0.35, "mul": 0.0000053405761, "unit": "scalar" }, "name": "EVAP LDP Very Small Leak Fail Value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17FA"}, "freq": 1,
+  "signals": [
+    {"id": "LDP_EVAPCP", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.00000056098486, "unit": "amps" }, "name": "EVAP LDP Incorrect Purge Flow Value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A211"}, "freq": 1,
+  "signals": [
+    {"id": "CPP_SW", "path": "Transmission", "fmt": { "len": 1, "bix": 0, "max": 1, "unit": "offon" }, "name": "Clutch Pedal Position Switch"},
+    {"id": "BPA_SW", "path": "Engine", "fmt": { "len": 1, "bix": 1, "max": 1, "unit": "offon" }, "name": "Brake Pressure Applied Switch"},
+    {"id": "PNP_SW", "path": "Transmission", "fmt": { "len": 1, "bix": 2, "max": 1, "unit": "offon" }, "name": "Park Neutral Position Switch"},
+    {"id": "IVS_SW", "path": "Engine", "fmt": { "len": 1, "bix": 4, "max": 1, "unit": "offon" }, "name": "Idle Validation Switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A216"}, "freq": 1,
+  "signals": [
+    {"id": "SCCS_V", "path": "Vehicle", "fmt": { "len": 16, "max": 5, "mul": 0.0000762951095, "unit": "volts" }, "name": "Cruise Control Voltage", "description": "0.0V = On/Off Switch depressed, 1.1V = Cancel depressed, 3.1V = Set/- switch depressed, 4.2V = Res/+ switch depressed, 5.0V = Normal"}
   ]}
 ]
 }
