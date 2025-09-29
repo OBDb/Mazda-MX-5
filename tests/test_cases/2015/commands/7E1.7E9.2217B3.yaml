@@ -1,0 +1,8 @@
+command_id: 7E1.7E9.2217B3
+test_cases:
+- expected_values:
+    MX5_TRANS_T_V5: 90.84
+  response: 7E9046217B358
+- expected_values:
+    MX5_TRANS_T_V5: 216.84
+  response: 7E9046217B3A3
