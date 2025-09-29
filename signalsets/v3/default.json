@@ -3,103 +3,197 @@
   "signals": [
     {"id": "MX5_FLV", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "liters" }, "name": "Fuel level"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "C901"}, "freq": 1, "dbgfilter": { "to": 2014, "from": 2016 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "C901"}, "freq": 1, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014], "from": 2016 },
   "signals": [
-    {"id": "MX5_TP_FL", "path": "Tires", "fmt": {           "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "MX5_TP_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
-    {"id": "MX5_TP_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "MX5_TP_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 50, "mul": 0.1991368143, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"}
+    {"id": "MX5_TP_FL", "path": "Tires", "fmt": {           "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "MX5_TP_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
+    {"id": "MX5_TP_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "MX5_TP_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "C902"}, "freq": 1, "dbgfilter": { "to": 2014, "from": 2016 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "C902"}, "freq": 1, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014], "from": 2016 },
   "signals": [
-    {"id": "MX5_TT_FL", "path": "Tires", "fmt": {           "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front left tire Temperature"},
-    {"id": "MX5_TT_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front right tire Temperature"},
-    {"id": "MX5_TT_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear left tire Temperature"},
-    {"id": "MX5_TT_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 200, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear right tire Temperature"}
+    {"id": "MX5_TT_FL", "path": "Tires", "fmt": {           "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front left tire temperature"},
+    {"id": "MX5_TT_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front right tire temperature"},
+    {"id": "MX5_TT_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear left tire temperature"},
+    {"id": "MX5_TT_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear right tire temperature"}
   ]},
-{ "hdr": "793", "dbg": true, "cmd": {"22": "D901"}, "freq": 0.25,
+{ "hdr": "793", "rax": "79B", "dbg": true, "cmd": {"22": "D901"}, "freq": 0.25,
   "signals": [
     {"id": "MX5_CC_TGT_DIST", "path": "Cruise control", "fmt": {"bix": 8, "len": 8, "max": 63.75, "div": 4, "unit": "meters" }, "name": "Distance from bumper to target"}
   ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0306"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0200"}, "freq": 3600,
   "signals": [
-    {"id": "MX5_EGR_OPEN_MM", "path": "Engine", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "millimeters" }, "name": "Exhaust gas recirculation open", "description": "Monitors the physical position of the EGR valve, which controls the amount of exhaust gas being recirculated back into the engine's intake system."}
+    {"id": "MX5_DTC_CNT", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of DTCs"}
   ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0307"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0202"}, "freq": 3600,
   "signals": [
-    {"id": "MX5_FP_LD", "path": "Fuel", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Fuel pump load"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0380"}, "freq": 0.25,
-  "signals": [
-    {"id": "MX5_DPF_REGEN", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Diesel particulate filter regeneration status", "description": "The current phase of the regeneration cycle. Lower values typically indicate normal operation with no active regeneration. Mid-range values indicate the regeneration process is in progress. Higher values represent later stages of the regeneration cycle. A value returning to 0 or near-zero indicates a completed regeneration cycle."}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "03DB"}, "freq": 0.251,
-  "signals": [
-    {"id": "MX5_EXH_DIFF_P", "path": "Engine", "fmt": { "len": 16, "max": 4.5, "div": 200, "unit": "volts" }, "name": "Exhaust differential pressure", "description": "This sensor is crucial for monitoring how clogged the DPF has become. It measures the pressure before and after the DPF in the exhaust system, with the difference between these two measurements indicating how restricted the filter has become. When the pressure difference becomes too high (indicating a clogged filter), the ECM will initiate a regeneration process to burn off the accumulated soot and clean the filter."}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "03DF"}, "freq": 0.25,
-  "signals": [
-    {"id": "MX5_VGT_OPEN_PERC", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Variable geometry turbocharger open", "description": "Measures the position of the vanes in the Variable Geometry Turbocharger (VGT) and reports this position as a percentage value."}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "03FB"}, "freq": 0.25,
-  "signals": [
-    {"id": "MX5_EGR_OPEN_PERC", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Exhaust gas recirculation open"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "042C"}, "freq": 0.25,
-  "signals": [
-    {"id": "MX5_DPF_PM_ACC", "path": "Engine.DPF", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "gramsPerLiter" }, "name": "Diesel particulate filter particulate matter accumulation"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "042D"}, "freq": 0.25,
-  "signals": [
-    {"id": "MX5_DPF_PM_GEN", "path": "Engine.DPF", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "gramsPerLiter" }, "name": "Diesel particulate filter particulate matter generation"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0432"}, "freq": 60,
-  "signals": [
-    {"id": "MX5_DPF_REGEN_CNT", "path": "Engine.DPF", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Diesel particulate filter regeneration count"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0433"}, "freq": 60,
-  "signals": [
-    {"id": "MX5_DPF_LAMP_CNT", "path": "Engine.DPF", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Diesel particulate filter lamp count"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0434"}, "freq": 2,
-  "signals": [
-    {"id": "MX5_DPF_REGEN_DIST", "path": "Engine.DPF", "fmt": {"bix": 8, "len": 24, "max": 25600, "mul": 100, "div": 65535, "unit": "kilometers" }, "name": "Diesel particulate filter regeneration distance"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0435"}, "freq": 60,
-  "signals": [
-    {"id": "MX5_OIL_DIL_CNT", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Oil dilution events", "description": "Monitors fuel dilution in your engine oil, which is when fuel (gasoline) mixes with the engine oil in the crankcase."}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "044B"}, "freq": 0.25,
-  "signals": [
-    {"id": "MX5_DPF_PM_ACC_DES", "path": "Engine.DPF", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "gramsPerLiter" }, "name": "Diesel particulate filter particulate matter accumulation (desired)"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0451"}, "freq": 0.25,
-  "signals": [
-    {"id": "MX5_OXY", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Oxygen concentration"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "050F"}, "freq": 0.25,
-  "signals": [
-    {"id": "MX5_VGT_OPEN", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "millimeters" }, "name": "Variable geometry turbocharger open"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0519"}, "freq": 5,
-  "signals": [
-    {"id": "MX5_OIL_CHANGE_DIST", "path": "Fluids", "fmt": { "len": 16, "max": 262140, "mul": 4, "unit": "kilometers" }, "name": "Distance since oil changed"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0522"}, "freq": 1,
-  "signals": [
-    {"id": "MX5_FUEL_T", "path": "Fuel", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temp"}
-  ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "0542"}, "freq": 5,
-  "signals": [
-    {"id": "MX5_OIL_CHANGE_DIST_MAX", "path": "Fluids", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Max distance to oil change"}
+    {"id": "MX5_DTC_CNTD", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of DTCs (on demand)"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0301"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_MAP", "path": "Engine", "fmt": { "len": 16, "max": 4, "div": 1000, "unit": "volts" }, "name": "MAP voltage", "description": "A properly functioning sensor should read around 1 to 1.5 volts at idle."}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0306"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_EGR_OPEN_MM", "path": "Engine", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "millimeters" }, "name": "Exhaust gas recirculation open", "description": "Monitors the physical position of the EGR valve, which controls the amount of exhaust gas being recirculated back into the engine's intake system."}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0307"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_FP_LD", "path": "Fuel", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Fuel pump load"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0380"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_DPF_REGEN", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Diesel particulate filter regeneration status", "description": "The current phase of the regeneration cycle. Lower values typically indicate normal operation with no active regeneration. Mid-range values indicate the regeneration process is in progress. Higher values represent later stages of the regeneration cycle. A value returning to 0 or near-zero indicates a completed regeneration cycle."}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "03DB"}, "freq": 0.251,
+  "signals": [
+    {"id": "MX5_EXH_DIFF_P", "path": "Engine", "fmt": { "len": 16, "max": 4.5, "div": 200, "unit": "volts" }, "name": "Exhaust differential pressure", "description": "This sensor is crucial for monitoring how clogged the DPF has become. It measures the pressure before and after the DPF in the exhaust system, with the difference between these two measurements indicating how restricted the filter has become. When the pressure difference becomes too high (indicating a clogged filter), the ECM will initiate a regeneration process to burn off the accumulated soot and clean the filter."}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "03DF"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_VGT_OPEN_PERC", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Variable geometry turbocharger open", "description": "Measures the position of the vanes in the Variable Geometry Turbocharger (VGT) and reports this position as a percentage value."}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "03FB"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_EGR_OPEN_PERC", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Exhaust gas recirculation open"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0415"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_EOP", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "kilopascal" }, "name": "Engine oil pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "042C"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_DPF_PM_ACC", "path": "Engine.DPF", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "gramsPerLiter" }, "name": "Diesel particulate filter particulate matter accumulation"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "042D"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_DPF_PM_GEN", "path": "Engine.DPF", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "gramsPerLiter" }, "name": "Diesel particulate filter particulate matter generation"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0432"}, "freq": 60,
+  "signals": [
+    {"id": "MX5_DPF_REGEN_CNT", "path": "Engine.DPF", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Diesel particulate filter regeneration count"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0433"}, "freq": 60,
+  "signals": [
+    {"id": "MX5_DPF_LAMP_CNT", "path": "Engine.DPF", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Diesel particulate filter lamp count"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0434"}, "freq": 2,
+  "signals": [
+    {"id": "MX5_DPF_REGEN_DIST", "path": "Engine.DPF", "fmt": {"bix": 8, "len": 24, "max": 25600, "mul": 100, "div": 65535, "unit": "kilometers" }, "name": "Diesel particulate filter regeneration distance"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0435"}, "freq": 60,
+  "signals": [
+    {"id": "MX5_OIL_DIL_CNT", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Oil dilution events", "description": "Monitors fuel dilution in your engine oil, which is when fuel (gasoline) mixes with the engine oil in the crankcase."}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "044B"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_DPF_PM_ACC_DES", "path": "Engine.DPF", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "gramsPerLiter" }, "name": "Diesel particulate filter particulate matter accumulation (desired)"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0451"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_OXY", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Oxygen concentration"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "050F"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_VGT_OPEN", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "millimeters" }, "name": "Variable geometry turbocharger open"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0519"}, "freq": 5,
+  "signals": [
+    {"id": "MX5_OIL_CHANGE_DIST", "path": "Fluids", "fmt": { "len": 16, "max": 262140, "mul": 4, "unit": "kilometers" }, "name": "Distance since oil changed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0522"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_FUEL_T", "path": "Fuel", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temp"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0542"}, "freq": 5,
+  "signals": [
+    {"id": "MX5_OIL_CHANGE_DIST_MAX", "path": "Fluids", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Max distance to oil change"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0900"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_MAP_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Manifold absolute pressure voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0914"}, "freq": 0.5,
+  "signals": [
+    {"id": "MX5_APP1_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "APP sensor 1 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0915"}, "freq": 0.5,
+  "signals": [
+    {"id": "MX5_APP2_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "APP sensor 2 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0917"}, "freq": 0.5,
+  "signals": [
+    {"id": "MX5_TP1_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Throttle position 1 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0918"}, "freq": 0.5,
+  "signals": [
+    {"id": "MX5_TP2_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Throttle position 2 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "091A"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_ETC_DSD_DEG", "path": "Engine", "fmt": { "len": 16, "max": 127.9, "div": 512, "unit": "degrees" }, "name": "Throttle control desired (degrees)"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "093C"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_ETC_ACT_DEG", "path": "Engine", "fmt": { "len": 16, "max": 127.9, "div": 512, "unit": "degrees" }, "name": "Throttle position actual (degrees)"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0967"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_FAN3_SW", "path": "Engine", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon" }, "name": "Cooling fan relay control"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0968"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_GEN_CHRGLP", "path": "Engine", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Generator warning light"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "096E"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_IDLE", "path": "Engine", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Idle speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "097C"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_GEN_DSD_V", "path": "Engine", "fmt": { "len": 16, "max": 31.99, "div": 2048, "unit": "volts" }, "name": "Generator voltage desired"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "098E"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_EGRP_STEPS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Exhaust gas recirculation purge steps"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1101"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_ACCS_SW",   "path": "Engine",       "fmt": {          "len": 1, "max": 1, "unit": "offon" }, "name": "A/C relay"},
+    {"id": "MX5_BOO_SW",    "path": "Engine",       "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake on/off switch"},
+    {"id": "MX5_INGEAR_SW", "path": "Transmission", "fmt": {"bix": 3, "len": 1, "max": 1, "unit": "offon" }, "name": "In gear switch"},
+    {"id": "MX5_PSP_SW",    "path": "Engine",       "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Power steering position switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1103"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_FAN1_SW", "path": "Engine", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon" }, "name": "Cooling fan relay control"},
+    {"id": "MX5_FAN2_SW", "path": "Engine", "fmt": {"bix": 3, "len": 1, "max": 1, "unit": "offon" }, "name": "Cooling fan relay control"},
+    {"id": "MX5_IMRC_SW", "path": "Engine", "fmt": {"bix": 4, "len": 1, "max": 1, "unit": "offon" }, "name": "Intake manifold runner control"},
+    {"id": "MX5_MIL_SW",  "path": "DTCs",   "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "offon" }, "name": "Malfunction indicator lamp"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1104"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_AC_REQ_SW", "path": "Engine", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "A/C refrigerant pressure switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "114A"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_IAT_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Intake air temp voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "114D"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_ECT_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Engine coolant temp voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1169"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_TPCT", "path": "Engine", "fmt": { "len": 16, "max": 1023.984375, "div": 64, "unit": "volts" }, "name": "Throttle position closed voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1174"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_O2S12_A_V", "path": "Engine", "fmt": { "len": 16, "max": 63.99, "div": 1024, "unit": "volts" }, "name": "O2 sensor 1-2 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1177"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_MAF_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Mass air-flow voltage"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11BD"}, "freq": 1,
   "signals": [
@@ -109,25 +203,130 @@
   "signals": [
     {"id": "MX5_EOT", "path": "Engine", "fmt": { "len": 16, "max": 615.35, "min": -40, "div": 100, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "17B3"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1340"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_APP", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal position (full range)"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1410"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_FUEL_PW", "path": "Fuel", "fmt": { "len": 16, "max": 524.288, "div": 125, "unit": "scalar" }, "name": "Injector fuel pulse width"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "160D"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_IMTV_SW", "path": "Engine", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Variable intake air control"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1631"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_O2S_HTR11_SW", "path": "Engine", "fmt": {          "len": 1, "max": 1, "unit": "offon" }, "name": "O2 sensor 1 heater control (front)"},
+    {"id": "MX5_O2S_HTR12_SW", "path": "Engine", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "O2 sensor 2 heater control (rear)"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "163E"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_O2S12_FT", "path": "Engine", "fmt": { "len": 16, "max": 799.98, "mul": 100, "div": 8192, "unit": "percent" }, "name": "Rear O2 sensor fuel trim"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "16B3"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_BARO_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "BARO sensor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "16CD"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_VT_ACT", "path": "Engine", "fmt": { "len": 16, "max": 4095, "div": 16, "unit": "degrees" }, "name": "Valve timing actual"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "16CE"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_VT_DIFF", "path": "Engine", "fmt": { "len": 16, "max": 4095, "div": 16, "unit": "degrees" }, "name": "Valve timing error"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "16CF"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_VT_DUTY", "path": "Engine", "fmt": { "len": 16, "max": 200, "mul": 200, "div": 65535, "unit": "percent" }, "name": "Valve timing OCV control duty"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "16E8"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_GEN_FC", "path": "Engine", "fmt": { "len": 16, "max": 200, "mul": 200, "div": 65535, "unit": "percent" }, "name": "Generator field coil control duty"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "16E9"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_GEN_V", "path": "Engine", "fmt": { "len": 16, "max": 8191.875, "div": 8, "unit": "volts" }, "name": "Generator output voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "16F0"}, "freq": 86400,
+  "signals": [
+    {"id": "MX5_TIRESIZE", "path": "Tires", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Tire revolutions per mile"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1706"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_HIDET_SW",      "path": "Engine", "fmt": {          "len": 1, "max": 1, "unit": "offon" }, "name": "High detonation switch"},
+    {"id": "MX5_LAMBDA_MOD_SW", "path": "Engine", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "offon" }, "name": "Lambda modification switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1718"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_FP_RELAY_SW", "path": "Fuel", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Fuel pump relay switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1746"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_KNOCKR", "path": "Engine", "fmt": { "len": 8, "max": 89.78, "mul": 100, "div": 284, "unit": "degrees" }, "name": "Knock retard"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "176B"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_LDP_VSL_DV", "path": "Emissions", "fmt": { "len": 16, "max": 0.35, "mul": 0.0000053406, "unit": "scalar" }, "name": "EVAP LDP very small leak detect value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "179A"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_LDP_VSL_SV", "path": "Emissions", "fmt": { "len": 16, "max": 0.35, "mul": 0.0000053406, "unit": "scalar" }, "name": "EVAP LDP very small leak safe value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17B3"}, "freq": 1, "dbgfilter": { "to": 2014, "from": 2016 },
   "signals": [
     {"id": "MX5_TRANS_T_V2", "path": "Transmission", "fmt": { "len": 8, "max": 371.4, "min": -57, "mul": 42, "div": 25, "add": -57, "unit": "fahrenheit" }, "name": "Transmission temperature v2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1E1C"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "17F4"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_LDP_MON_CURRENT", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP monitoring current"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "17F5"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_LDP_REF_CURRENT", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP reference current"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "17F7"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_LDP_IDL_CURRENT", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP idle current"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "17F8"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_LDP_SL_DV", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP small leak detect value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "17F9"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_LDP_VSL_FV", "path": "Emissions", "fmt": { "len": 16, "max": 0.35, "mul": 0.0000053406, "unit": "scalar" }, "name": "EVAP LDP very small leak fail value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "17FA"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_LDP_EVAPCP", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP incorrect purge flow value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1E1C"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "MX5_TRANS_T_V3", "path": "Transmission", "fmt": { "len": 16, "max": 60.6875, "mul": 9, "div": 80, "add": 32, "unit": "fahrenheit" }, "name": "Transmission temperature v3"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A211"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_CPP_SW", "path": "Transmission", "fmt": {          "len": 1, "max": 1, "unit": "offon" }, "name": "Clutch pedal position switch"},
+    {"id": "MX5_BPA_SW", "path": "Engine",       "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake pressure applied switch"},
+    {"id": "MX5_PNP_SW", "path": "Transmission", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon" }, "name": "Park neutral position switch"},
+    {"id": "MX5_IVS_SW", "path": "Engine",       "fmt": {"bix": 4, "len": 1, "max": 1, "unit": "offon" }, "name": "Idle validation switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A216"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_SCCS_V", "path": "Cruise control", "fmt": { "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "Cruise control voltage", "description": "0.0V = On/Off Switch depressed, 1.1V = Cancel depressed, 3.1V = Set/- switch depressed, 4.2V = Res/+ switch depressed, 5.0V = Normal"}
+  ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "11BD"}, "freq": 1,
   "signals": [
-    {"id": "MX5_TRANS_T_V4", "path": "Transmission", "fmt": { "len": 16, "max": 60.6875, "mul": 9, "div": 80, "add": 32, "unit": "fahrenheit" }, "name": "Transmission temperature v4"}
+    {"id": "MX5_TRANS_T_V4", "path": "Transmission", "fmt": { "len": 16, "max": 7000, "mul": 9, "div": 80, "add": 32, "unit": "fahrenheit" }, "name": "Transmission temperature v4"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "17B3"}, "freq": 1,
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "17B3"}, "freq": 1, "dbgfilter": { "to": 2014, "from": 2016 },
   "signals": [
     {"id": "MX5_TRANS_T_V5", "path": "Transmission", "fmt": { "len": 8, "max": 371.4, "min": -57, "mul": 42, "div": 25, "add": -57, "unit": "fahrenheit" }, "name": "Transmission temperature v5"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1E1C"}, "freq": 1,
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "1E1C"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
-    {"id": "MX5_TRANS_T_V6", "path": "Transmission", "fmt": { "len": 16, "max": 60.6875, "mul": 9, "div": 80, "add": 32, "unit": "fahrenheit" }, "name": "Transmission temperature v6"}
+    {"id": "MX5_TRANS_T_V6", "path": "Transmission", "fmt": { "len": 16, "max": 7000, "mul": 9, "div": 80, "add": 32, "unit": "fahrenheit" }, "name": "Transmission temperature v6"}
   ]}
 ]
 }
