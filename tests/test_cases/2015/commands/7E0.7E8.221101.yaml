@@ -1,0 +1,32 @@
+command_id: 7E0.7E8.221101
+test_cases:
+- expected_values:
+    MX5_ACCS_SW: 1
+    MX5_BOO_SW: 0
+    MX5_INGEAR_SW: 0
+    MX5_PSP_SW: 0
+  response: '7E80462110101'
+- expected_values:
+    MX5_ACCS_SW: 0
+    MX5_BOO_SW: 0
+    MX5_INGEAR_SW: 1
+    MX5_PSP_SW: 0
+  response: '7E80462110108'
+- expected_values:
+    MX5_ACCS_SW: 1
+    MX5_BOO_SW: 0
+    MX5_INGEAR_SW: 1
+    MX5_PSP_SW: 0
+  response: '7E80462110109'
+- expected_values:
+    MX5_ACCS_SW: 0
+    MX5_BOO_SW: 1
+    MX5_INGEAR_SW: 1
+    MX5_PSP_SW: 0
+  response: 7E8046211010A
+- expected_values:
+    MX5_ACCS_SW: 1
+    MX5_BOO_SW: 1
+    MX5_INGEAR_SW: 1
+    MX5_PSP_SW: 0
+  response: 7E8046211010B

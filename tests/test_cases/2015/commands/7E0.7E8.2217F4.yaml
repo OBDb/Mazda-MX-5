@@ -1,0 +1,20 @@
+command_id: 7E0.7E8.2217F4
+test_cases:
+- expected_values:
+    MX5_LDP_MON_CURRENT: 0
+  response: 7E8056217F40000
+- expected_values:
+    MX5_LDP_MON_CURRENT: 0.01684
+  response: 7E8056217F4753C
+- expected_values:
+    MX5_LDP_MON_CURRENT: 0.01967
+  response: 7E8056217F488EE
+- expected_values:
+    MX5_LDP_MON_CURRENT: 0.02157
+  response: 7E8056217F4962C
+- expected_values:
+    MX5_LDP_MON_CURRENT: 0.02159
+  response: 7E8056217F49655
+- expected_values:
+    MX5_LDP_MON_CURRENT: 0.02162
+  response: 7E8056217F49688
