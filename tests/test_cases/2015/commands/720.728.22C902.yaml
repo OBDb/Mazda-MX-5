@@ -7,17 +7,11 @@ test_cases:
     MX5_TT_RR: 68
   response: 7280762C90246464646
 - expected_values:
-    MX5_TT_FL: 118.4
-    MX5_TT_FR: 111.2
-    MX5_TT_RL: 118.4
-    MX5_TT_RR: 111.2
-  response: 7280762C902625E625E
-- expected_values:
-    MX5_TT_FL: 118.4
-    MX5_TT_FR: 113
-    MX5_TT_RL: 118.4
-    MX5_TT_RR: 111.2
-  response: 7280762C902625F625E
+    MX5_TT_FL: 116.6
+    MX5_TT_FR: 114.8
+    MX5_TT_RL: 116.6
+    MX5_TT_RR: 113
+  response: 7280762C9026160615F
 - expected_values:
     MX5_TT_FL: 120.2
     MX5_TT_FR: 109.4
