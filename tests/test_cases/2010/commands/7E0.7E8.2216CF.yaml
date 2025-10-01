@@ -1,6 +1,9 @@
 command_id: 7E0.7E8.2216CF
 test_cases:
 - expected_values:
+    MX5_VT_DUTY: 16.54994
+  response: 7E8056216CF152F
+- expected_values:
     MX5_VT_DUTY: 17.19997
   response: 7E8056216CF1604
 - expected_values:

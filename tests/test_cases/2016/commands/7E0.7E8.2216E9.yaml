@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.2216E9
+test_cases:
+- expected_values:
+    MX5_GEN_V: 14
+  response: 7E8056216E90070

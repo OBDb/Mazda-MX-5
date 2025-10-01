@@ -4,11 +4,11 @@ test_cases:
     MX5_MAF_V: 2.64
   response: 7E8056211770A50
 - expected_values:
+    MX5_MAF_V: 5.6
+  response: 7E80562117715E0
+- expected_values:
     MX5_MAF_V: 7.94
   response: 7E8056211771F04
 - expected_values:
     MX5_MAF_V: 9.02
   response: 7E805621177233C
-- expected_values:
-    MX5_MAF_V: 9.14
-  response: 7E80562117723B4
