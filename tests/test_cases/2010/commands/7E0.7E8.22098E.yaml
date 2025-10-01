@@ -4,29 +4,5 @@ test_cases:
     MX5_EGRP_STEPS: 0
   response: 7E80562098E0000
 - expected_values:
-    MX5_EGRP_STEPS: 10
-  response: 7E80562098E000A
-- expected_values:
-    MX5_EGRP_STEPS: 11
-  response: 7E80562098E000B
-- expected_values:
-    MX5_EGRP_STEPS: 16
-  response: 7E80562098E0010
-- expected_values:
-    MX5_EGRP_STEPS: 17
-  response: 7E80562098E0011
-- expected_values:
-    MX5_EGRP_STEPS: 20
-  response: 7E80562098E0014
-- expected_values:
-    MX5_EGRP_STEPS: 23
-  response: 7E80562098E0017
-- expected_values:
-    MX5_EGRP_STEPS: 27
-  response: 7E80562098E001B
-- expected_values:
-    MX5_EGRP_STEPS: 29
-  response: 7E80562098E001D
-- expected_values:
     MX5_EGRP_STEPS: 30
   response: 7E80562098E001E

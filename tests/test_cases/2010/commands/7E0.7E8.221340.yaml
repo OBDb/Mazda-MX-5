@@ -27,3 +27,6 @@ test_cases:
 - expected_values:
     MX5_APP: 11.76471
   response: 7E8046213401E
+- expected_values:
+    MX5_APP: 28.62745
+  response: '7E80462134049'

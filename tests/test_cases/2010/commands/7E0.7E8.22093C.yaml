@@ -7,5 +7,5 @@ test_cases:
     MX5_ETC_ACT_DEG: 6.47852
   response: 7E80562093C0CF5
 - expected_values:
-    MX5_ETC_ACT_DEG: 7.26758
-  response: 7E80562093C0E89
+    MX5_ETC_ACT_DEG: 19.28906
+  response: 7E80562093C2694

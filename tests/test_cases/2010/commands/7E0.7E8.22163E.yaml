@@ -4,8 +4,8 @@ test_cases:
     MX5_O2S12_FT: 0.09766
   response: 7E80562163E0008
 - expected_values:
-    MX5_O2S12_FT: 799.81689
-  response: 7E80562163EFFF1
+    MX5_O2S12_FT: 798.32764
+  response: 7E80562163EFF77
 - expected_values:
     MX5_O2S12_FT: 799.8291
   response: 7E80562163EFFF2

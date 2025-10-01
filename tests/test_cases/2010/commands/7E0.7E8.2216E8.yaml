@@ -4,8 +4,8 @@ test_cases:
     MX5_GEN_FC: 0
   response: 7E8056216E80000
 - expected_values:
-    MX5_GEN_FC: 37.41512
-  response: 7E8056216E82FE4
+    MX5_GEN_FC: 33.56985
+  response: 7E8056216E82AF8
 - expected_values:
     MX5_GEN_FC: 52.20417
   response: 7E8056216E842D2
