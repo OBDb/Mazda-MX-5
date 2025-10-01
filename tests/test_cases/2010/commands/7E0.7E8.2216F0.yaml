@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.2216F0
+test_cases:
+- expected_values:
+    MX5_TIRESIZE: 856
+  response: 7E8056216F00358
