@@ -1,0 +1,29 @@
+command_id: 7E0.7E8.22096E
+test_cases:
+- expected_values:
+    MX5_IDLE: 840
+  response: 7E80562096E0D20
+- expected_values:
+    MX5_IDLE: 850
+  response: 7E80562096E0D48
+- expected_values:
+    MX5_IDLE: 954.5
+  response: 7E80562096E0EEA
+- expected_values:
+    MX5_IDLE: 985.5
+  response: 7E80562096E0F66
+- expected_values:
+    MX5_IDLE: 998
+  response: 7E80562096E0F98
+- expected_values:
+    MX5_IDLE: 999
+  response: 7E80562096E0F9C
+- expected_values:
+    MX5_IDLE: 999.75
+  response: 7E80562096E0F9F
+- expected_values:
+    MX5_IDLE: 1000.75
+  response: 7E80562096E0FA3
+- expected_values:
+    MX5_IDLE: 1008.5
+  response: 7E80562096E0FC2
