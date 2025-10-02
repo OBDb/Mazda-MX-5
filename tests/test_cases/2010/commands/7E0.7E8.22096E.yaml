@@ -1,8 +1,8 @@
 command_id: 7E0.7E8.22096E
 test_cases:
 - expected_values:
-    MX5_IDLE: 812.25
-  response: 7E80562096E0CB1
+    MX5_IDLE: 750
+  response: 7E80562096E0BB8
 - expected_values:
     MX5_IDLE: 840
   response: 7E80562096E0D20

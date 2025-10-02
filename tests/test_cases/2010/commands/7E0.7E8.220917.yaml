@@ -1,11 +1,14 @@
 command_id: 7E0.7E8.220917
 test_cases:
 - expected_values:
-    MX5_TP1_V: 0.56
-  response: '7E8056209170230'
+    MX5_TP1_V: 0.545
+  response: '7E8056209170221'
 - expected_values:
     MX5_TP1_V: 0.77
   response: '7E8056209170302'
 - expected_values:
     MX5_TP1_V: 1.015
   response: 7E80562091703F7
+- expected_values:
+    MX5_TP1_V: 1.035
+  response: 7E805620917040B

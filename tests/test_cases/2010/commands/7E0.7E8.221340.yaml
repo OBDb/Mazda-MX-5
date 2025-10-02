@@ -4,29 +4,5 @@ test_cases:
     MX5_APP: 0
   response: '7E80462134000'
 - expected_values:
-    MX5_APP: 5.88235
-  response: 7E8046213400F
-- expected_values:
-    MX5_APP: 7.05882
-  response: '7E80462134012'
-- expected_values:
-    MX5_APP: 7.45098
-  response: '7E80462134013'
-- expected_values:
-    MX5_APP: 8.62745
-  response: '7E80462134016'
-- expected_values:
-    MX5_APP: 9.80392
-  response: '7E80462134019'
-- expected_values:
-    MX5_APP: 10.98039
-  response: 7E8046213401C
-- expected_values:
-    MX5_APP: 11.37255
-  response: 7E8046213401D
-- expected_values:
-    MX5_APP: 11.76471
-  response: 7E8046213401E
-- expected_values:
     MX5_APP: 28.62745
   response: '7E80462134049'
