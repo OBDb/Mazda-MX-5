@@ -5,6 +5,12 @@ test_cases:
     MX5_CPP_SW: 0
     MX5_IVS_SW: 0
     MX5_PNP_SW: 0
+  response: 7E80562A2110000
+- expected_values:
+    MX5_BPA_SW: 0
+    MX5_CPP_SW: 0
+    MX5_IVS_SW: 0
+    MX5_PNP_SW: 0
   response: 7E80562A2110003
 - expected_values:
     MX5_BPA_SW: 0
