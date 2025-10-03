@@ -13,6 +13,9 @@ test_cases:
     MX5_APP2_V: 0.545
   response: '7E8056209150221'
 - expected_values:
+    MX5_APP2_V: 0.779
+  response: 7E805620915030B
+- expected_values:
     MX5_APP2_V: 0.784
   response: '7E8056209150310'
 - expected_values:
