@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.220301|f=2016-
+test_cases:
+- expected_values:
+    MX5_MAP: 4
+  response: '7E8056203011078'

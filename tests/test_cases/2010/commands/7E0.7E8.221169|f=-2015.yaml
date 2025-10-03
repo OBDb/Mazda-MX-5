@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.221169|f=-2015
+test_cases:
+- expected_values:
+    MX5_TPCT: 93.75
+  response: '7E8056211691770'
+- expected_values:
+    MX5_TPCT: 94.20312
+  response: 7E805621169178D
+- expected_values:
+    MX5_TPCT: 94.64062
+  response: 7E80562116917A9

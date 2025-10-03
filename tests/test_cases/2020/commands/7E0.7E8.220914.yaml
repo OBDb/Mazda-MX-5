@@ -1,0 +1,26 @@
+command_id: 7E0.7E8.220914
+test_cases:
+- expected_values:
+    MX5_APP1_V: 0.786
+  response: '7E8056209140312'
+- expected_values:
+    MX5_APP1_V: 0.788
+  response: '7E8056209140314'
+- expected_values:
+    MX5_APP1_V: 0.789
+  response: '7E8056209140315'
+- expected_values:
+    MX5_APP1_V: 1.074
+  response: '7E8056209140432'
+- expected_values:
+    MX5_APP1_V: 1.583
+  response: 7E805620914062F
+- expected_values:
+    MX5_APP1_V: 1.586
+  response: '7E8056209140632'
+- expected_values:
+    MX5_APP1_V: 1.729
+  response: 7E80562091406C1
+- expected_values:
+    MX5_APP1_V: 1.746
+  response: 7E80562091406D2
