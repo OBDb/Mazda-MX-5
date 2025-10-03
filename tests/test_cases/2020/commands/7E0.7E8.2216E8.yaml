@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.2216E8
+test_cases:
+- expected_values:
+    MX5_GEN_FC: 33.73159
+  response: 7E8056216E82B2D
+- expected_values:
+    MX5_GEN_FC: 43.81476
+  response: 7E8056216E83815
+- expected_values:
+    MX5_GEN_FC: 44.51362
+  response: 7E8056216E838FA
+- expected_values:
+    MX5_GEN_FC: 51.11467
+  response: 7E8056216E8416D
