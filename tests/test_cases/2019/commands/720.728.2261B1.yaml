@@ -4,5 +4,14 @@ test_cases:
     MX5_FLV: 6
   response: 728046261B106
 - expected_values:
+    MX5_FLV: 12
+  response: 728046261B10C
+- expected_values:
     MX5_FLV: 13
   response: 728046261B10D
+- expected_values:
+    MX5_FLV: 15
+  response: 728046261B10F
+- expected_values:
+    MX5_FLV: 18
+  response: 728046261B112
