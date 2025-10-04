@@ -1,5 +1,14 @@
 command_id: 7E0.7E8.22091A
 test_cases:
 - expected_values:
+    MX5_ETC_DSD_DEG: 2.16992
+  response: 7E80562091A0457
+- expected_values:
+    MX5_ETC_DSD_DEG: 3.00781
+  response: 7E80562091A0604
+- expected_values:
     MX5_ETC_DSD_DEG: 3.49219
   response: 7E80562091A06FC
+- expected_values:
+    MX5_ETC_DSD_DEG: 17.74414
+  response: 7E80562091A237D

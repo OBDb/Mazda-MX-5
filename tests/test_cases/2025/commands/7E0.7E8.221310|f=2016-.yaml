@@ -1,5 +1,29 @@
 command_id: 7E0.7E8.221310|f=2016-
 test_cases:
 - expected_values:
+    MX5_EOT: 19.77
+  response: '7E8056213101759'
+- expected_values:
+    MX5_EOT: 20.44
+  response: 7E805621310179C
+- expected_values:
+    MX5_EOT: 21.28
+  response: 7E80562131017F0
+- expected_values:
+    MX5_EOT: 22.69
+  response: 7E805621310187D
+- expected_values:
+    MX5_EOT: 23.6
+  response: 7E80562131018D8
+- expected_values:
     MX5_EOT: 26.86
   response: 7E8056213101A1E
+- expected_values:
+    MX5_EOT: 68.93
+  response: 7E8056213102A8D
+- expected_values:
+    MX5_EOT: 85.39
+  response: 7E80562131030FB
+- expected_values:
+    MX5_EOT: 85.61
+  response: '7E8056213103111'
