@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.220917
+test_cases:
+- expected_values:
+    MX5_TP1_V: 0.67
+  response: 7E805620917029E
