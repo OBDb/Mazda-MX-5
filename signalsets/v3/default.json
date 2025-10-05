@@ -49,35 +49,35 @@
     {"id": "MX5_TT_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear left tire temperature"},
     {"id": "MX5_TT_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear right tire temperature"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D922"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D922"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TP_FL_ND", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Front left pressure", "suggestedMetric": "frontLeftTirePressure"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D923"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D923"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TP_FR_ND", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Front right pressure", "suggestedMetric": "frontRightTirePressure"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D924"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D924"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TP_RL_ND", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Rear left pressure", "suggestedMetric": "rearLeftTirePressure"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D925"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D925"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TP_RR_ND", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Rear right pressure", "suggestedMetric": "rearRightTirePressure"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D926"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D926"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TT_FL_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Front left temperature"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D927"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D927"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TT_FR_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Front right temperature"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D928"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D928"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TT_RL_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Rear left temperature"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D929"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D929"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TT_RR_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Rear right temperature"}
   ]},
