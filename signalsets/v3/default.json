@@ -1,33 +1,33 @@
 { "commands": [
-{ "hdr": "720", "rax": "728", "cmd": {"22": "2A05"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "2A05"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2018, "years": [2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TP_1_ND", "path": "Tires", "fmt": { "len": 8, "max": 3.5, "mul": 1373, "div": 100000, "unit": "bars" }, "name": "Wheel 1 pressure"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "2A06"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "2A06"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2018, "years": [2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TP_2_ND", "path": "Tires", "fmt": { "len": 8, "max": 3.5, "mul": 1373, "div": 100000, "unit": "bars" }, "name": "Wheel 2 pressure"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "2A07"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "2A07"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2018, "years": [2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TP_3_ND", "path": "Tires", "fmt": { "len": 8, "max": 3.5, "mul": 1373, "div": 100000, "unit": "bars" }, "name": "Wheel 3 pressure"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "2A08"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "2A08"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2018, "years": [2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TP_4_ND", "path": "Tires", "fmt": { "len": 8, "max": 3.5, "mul": 1373, "div": 100000, "unit": "bars" }, "name": "Wheel 4 pressure"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "2A0A"}, "freq": 15, "filter": { "from": 2016 }, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "2A0A"}, "freq": 15, "filter": { "from": 2016 }, "dbgfilter": { "to": 2018, "years": [2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TT_1_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Wheel 1 temperature"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "2A0B"}, "freq": 15, "filter": { "from": 2016 }, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "2A0B"}, "freq": 15, "filter": { "from": 2016 }, "dbgfilter": { "to": 2018, "years": [2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TT_2_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Wheel 2 temperature"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "2A0C"}, "freq": 15, "filter": { "from": 2016 }, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "2A0C"}, "freq": 15, "filter": { "from": 2016 }, "dbgfilter": { "to": 2018, "years": [2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TT_3_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Wheel 3 temperature"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "2A0D"}, "freq": 15, "filter": { "from": 2016 }, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "2A0D"}, "freq": 15, "filter": { "from": 2016 }, "dbgfilter": { "to": 2018, "years": [2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_TT_4_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Wheel 4 temperature"}
   ]},
