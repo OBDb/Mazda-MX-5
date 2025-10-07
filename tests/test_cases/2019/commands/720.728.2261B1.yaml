@@ -4,6 +4,9 @@ test_cases:
     MX5_FLV: 6
   response: 728046261B106
 - expected_values:
+    MX5_FLV: 9
+  response: 728046261B109
+- expected_values:
     MX5_FLV: 12
   response: 728046261B10C
 - expected_values:
