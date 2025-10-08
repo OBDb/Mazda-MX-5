@@ -1,0 +1,20 @@
+command_id: 7E0.7E8.221340|f=-2015
+test_cases:
+- expected_values:
+    MX5_APP: 0
+  response: '7E80462134000'
+- expected_values:
+    MX5_APP: 1.96078
+  response: '7E80462134005'
+- expected_values:
+    MX5_APP: 3.92157
+  response: 7E8046213400A
+- expected_values:
+    MX5_APP: 6.66667
+  response: '7E80462134011'
+- expected_values:
+    MX5_APP: 11.76471
+  response: 7E8046213401E
+- expected_values:
+    MX5_APP: 25.88235
+  response: '7E80462134042'
