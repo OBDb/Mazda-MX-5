@@ -4,11 +4,8 @@ test_cases:
     MX5_VT_ACT: 0
   response: 7E8056216CD0000
 - expected_values:
-    MX5_VT_ACT: 0.0625
-  response: 7E8056216CD0001
+    MX5_VT_ACT: 15.5
+  response: 7E8056216CD00F8
 - expected_values:
-    MX5_VT_ACT: 21.125
-  response: 7E8056216CD0152
-- expected_values:
-    MX5_VT_ACT: 22.9375
-  response: 7E8056216CD016F
+    MX5_VT_ACT: 17
+  response: 7E8056216CD0110

@@ -4,17 +4,8 @@ test_cases:
     MX5_VT_DIFF: 0
   response: 7E8056216CE0000
 - expected_values:
-    MX5_VT_DIFF: 0.5
-  response: 7E8056216CE0008
-- expected_values:
-    MX5_VT_DIFF: 1.4375
-  response: 7E8056216CE0017
-- expected_values:
-    MX5_VT_DIFF: 4094.3125
-  response: 7E8056216CEFFE5
-- expected_values:
-    MX5_VT_DIFF: 4094.625
-  response: 7E8056216CEFFEA
+    MX5_VT_DIFF: 4093.875
+  response: 7E8056216CEFFDE
 - expected_values:
     MX5_VT_DIFF: 4095
   response: 7E8056216CEFFFF
