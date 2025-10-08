@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.221174|f=-2015
+test_cases:
+- expected_values:
+    MX5_O2S12_A_V: 0.00977
+  response: 7E805621174000A
+- expected_values:
+    MX5_O2S12_A_V: 0.78125
+  response: '7E8056211740320'
+- expected_values:
+    MX5_O2S12_A_V: 0.93262
+  response: 7E80562117403BB

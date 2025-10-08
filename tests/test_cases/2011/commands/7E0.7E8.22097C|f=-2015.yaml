@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.22097C|f=-2015
+test_cases:
+- expected_values:
+    MX5_GEN_DSD_V: 13.5249
+  response: 7E80562097C6C33
+- expected_values:
+    MX5_GEN_DSD_V: 13.74561
+  response: 7E80562097C6DF7
+- expected_values:
+    MX5_GEN_DSD_V: 13.75195
+  response: 7E80562097C6E04
