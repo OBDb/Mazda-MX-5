@@ -34,5 +34,17 @@ test_cases:
     MX5_ACCS_SW: 1
     MX5_BOO_SW: 0
     MX5_INGEAR_SW: 1
+    MX5_PSP_SW: 0
+  response: '7E80462110109'
+- expected_values:
+    MX5_ACCS_SW: 1
+    MX5_BOO_SW: 1
+    MX5_INGEAR_SW: 1
+    MX5_PSP_SW: 0
+  response: 7E8046211010B
+- expected_values:
+    MX5_ACCS_SW: 1
+    MX5_BOO_SW: 0
+    MX5_INGEAR_SW: 1
     MX5_PSP_SW: 1
   response: '7E80462110189'
