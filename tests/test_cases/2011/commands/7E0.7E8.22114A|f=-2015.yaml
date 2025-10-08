@@ -1,14 +1,11 @@
 command_id: 7E0.7E8.22114A|f=-2015
 test_cases:
 - expected_values:
-    MX5_IAT_V: 17.28
-  response: 7E80562114A4380
+    MX5_IAT_V: 10.752
+  response: 7E80562114A2A00
 - expected_values:
-    MX5_IAT_V: 17.6
-  response: 7E80562114A44C0
-- expected_values:
-    MX5_IAT_V: 17.92
-  response: 7E80562114A4600
+    MX5_IAT_V: 10.944
+  response: 7E80562114A2AC0
 - expected_values:
     MX5_IAT_V: 29.824
   response: 7E80562114A7480
