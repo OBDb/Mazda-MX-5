@@ -35,53 +35,53 @@
   "signals": [
     {"id": "MX5_FLV", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "liters" }, "name": "Fuel level"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "C901"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "C901"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_TP_FL", "path": "Tires", "fmt": {           "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
     {"id": "MX5_TP_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
     {"id": "MX5_TP_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
     {"id": "MX5_TP_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "C902"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014], "from": 2016 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "C902"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2011, 2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_TT_FL", "path": "Tires", "fmt": {           "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front left tire temperature"},
     {"id": "MX5_TT_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Front right tire temperature"},
     {"id": "MX5_TT_RL", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear left tire temperature"},
     {"id": "MX5_TT_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 401, "min": -58, "mul": 1.8, "add": -58, "unit": "fahrenheit" }, "name": "Rear right tire temperature"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D922"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D922"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": {  },
   "signals": [
     {"id": "MX5_TP_FL_ND", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Front left pressure", "suggestedMetric": "frontLeftTirePressure"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D923"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D923"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": {  },
   "signals": [
     {"id": "MX5_TP_FR_ND", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Front right pressure", "suggestedMetric": "frontRightTirePressure"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D924"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D924"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": {  },
   "signals": [
     {"id": "MX5_TP_RL_ND", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Rear left pressure", "suggestedMetric": "rearLeftTirePressure"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D925"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D925"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": {  },
   "signals": [
     {"id": "MX5_TP_RR_ND", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Rear right pressure", "suggestedMetric": "rearRightTirePressure"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D926"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D926"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": {  },
   "signals": [
     {"id": "MX5_TT_FL_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Front left temperature"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D927"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D927"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": {  },
   "signals": [
     {"id": "MX5_TT_FR_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Front right temperature"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D928"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D928"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": {  },
   "signals": [
     {"id": "MX5_TT_RL_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Rear left temperature"}
   ]},
-{ "hdr": "726", "rax": "72E", "cmd": {"22": "D929"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D929"}, "freq": 1, "filter": { "to": 2016 }, "dbgfilter": {  },
   "signals": [
     {"id": "MX5_TT_RR_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Rear right temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0200"}, "freq": 3600, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0200"}, "freq": 3600, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_DTC_CNT", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of DTCs"}
   ]},
@@ -89,7 +89,7 @@
   "signals": [
     {"id": "MX5_DTC_CNTD", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of DTCs (on demand)"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0301"}, "freq": 0.25, "filter": { "from": 2016 }, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2021, 2022, 2023], "from": 2026 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0301"}, "freq": 0.25, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_MAP", "path": "Engine", "fmt": { "len": 16, "max": 4, "div": 1000, "unit": "volts" }, "name": "MAP voltage", "description": "A properly functioning sensor should read around 1 to 1.5 volts at idle."}
   ]},
@@ -97,7 +97,7 @@
   "signals": [
     {"id": "MX5_EOP", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "kilopascal" }, "name": "Engine oil pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0900"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0900"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_MAP_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Manifold absolute pressure voltage"}
   ]},
@@ -129,98 +129,98 @@
   "signals": [
     {"id": "MX5_FAN3_SW", "path": "Engine", "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "offon" }, "name": "Cooling fan relay control"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0968"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0968"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_GEN_CHRGLP", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Generator warning light"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "096E"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "096E"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_IDLE", "path": "Engine", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Idle speed"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "097C"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "097C"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_GEN_DSD_V", "path": "Engine", "fmt": { "len": 16, "max": 31.99, "div": 2048, "unit": "volts" }, "name": "Generator voltage desired"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "098E"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "098E"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_EGRP_STEPS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Exhaust gas recirculation purge steps"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1101"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1101"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_PSP_SW",    "path": "Engine",       "fmt": {          "len": 1, "max": 1, "unit": "offon" }, "name": "Power steering position switch"},
     {"id": "MX5_INGEAR_SW", "path": "Transmission", "fmt": {"bix": 4, "len": 1, "max": 1, "unit": "offon" }, "name": "In gear switch"},
     {"id": "MX5_BOO_SW",    "path": "Engine",       "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake on/off switch"},
     {"id": "MX5_ACCS_SW",   "path": "Engine",       "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "A/C relay"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1103"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1103"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_MIL_SW",  "path": "DTCs",   "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon" }, "name": "Malfunction indicator lamp"},
     {"id": "MX5_IMRC_SW", "path": "Engine", "fmt": {"bix": 3, "len": 1, "max": 1, "unit": "offon" }, "name": "Intake manifold runner control"},
     {"id": "MX5_FAN2_SW", "path": "Engine", "fmt": {"bix": 4, "len": 1, "max": 1, "unit": "offon" }, "name": "Cooling fan relay control"},
     {"id": "MX5_FAN1_SW", "path": "Engine", "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "offon" }, "name": "Cooling fan relay control"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1104"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1104"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_AC_REQ_SW", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "A/C refrigerant pressure switch"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "114A"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "114A"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_IAT_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Intake air temp voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "114D"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "114D"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_ECT_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Engine coolant temp voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1169"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1169"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_TPCT", "path": "Engine", "fmt": { "len": 16, "max": 1023.984375, "div": 64, "unit": "volts" }, "name": "Throttle position closed voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1174"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1174"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_O2S12_A_V", "path": "Engine", "fmt": { "len": 16, "max": 63.99, "div": 1024, "unit": "volts" }, "name": "O2 sensor 1-2 voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1177"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1177"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_MAF_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Mass air-flow voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1310"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2021, 2022, 2023], "from": 2026 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1310"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_EOT", "path": "Engine", "fmt": { "len": 16, "max": 615.35, "min": -40, "div": 100, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1340"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1340"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_APP", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal position (full range)"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1410"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1410"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_FUEL_PW", "path": "Fuel", "fmt": { "len": 16, "max": 524.288, "div": 125, "unit": "scalar" }, "name": "Injector fuel pulse width"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "160D"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "160D"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_IMTV_SW", "path": "Engine", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "offon" }, "name": "Variable intake air control"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1631"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1631"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_O2S_HTR12_SW", "path": "Engine", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "offon" }, "name": "O2 sensor 2 heater control (rear)"},
     {"id": "MX5_O2S_HTR11_SW", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "O2 sensor 1 heater control (front)"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "163E"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "163E"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_O2S12_FT", "path": "Engine", "fmt": { "len": 16, "max": 799.98, "mul": 100, "div": 8192, "unit": "percent" }, "name": "Rear O2 sensor fuel trim"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16B3"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16B3"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_BARO_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "BARO sensor voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16CD"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16CD"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_VT_ACT", "path": "Engine", "fmt": { "len": 16, "max": 4095, "div": 16, "unit": "degrees" }, "name": "Valve timing actual"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16CE"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16CE"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_VT_DIFF", "path": "Engine", "fmt": { "len": 16, "max": 4095, "div": 16, "unit": "degrees" }, "name": "Valve timing error"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16CF"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16CF"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_VT_DUTY", "path": "Engine", "fmt": { "len": 16, "max": 200, "mul": 200, "div": 65535, "unit": "percent" }, "name": "Valve timing OCV control duty"}
   ]},
@@ -232,51 +232,51 @@
   "signals": [
     {"id": "MX5_GEN_V", "path": "Engine", "fmt": { "len": 16, "max": 8191.875, "div": 8, "unit": "volts" }, "name": "Generator output voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16F0"}, "freq": 86400, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16F0"}, "freq": 86400, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_TIRESIZE", "path": "Tires", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Tire revolutions per mile"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1706"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1706"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_LAMBDA_MOD_SW", "path": "Engine", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Lambda modification switch"},
     {"id": "MX5_HIDET_SW",      "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "High detonation switch"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1718"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1718"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_FP_RELAY_SW", "path": "Fuel", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Fuel pump relay switch"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1746"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1746"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_KNOCKR", "path": "Engine", "fmt": { "len": 8, "max": 89.78, "mul": 100, "div": 284, "unit": "degrees" }, "name": "Knock retard"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F4"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F4"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_LDP_MON_CURRENT", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP monitoring current"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F5"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F5"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_LDP_REF_CURRENT", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP reference current"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F7"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F7"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_LDP_IDL_CURRENT", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP idle current"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F8"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F8"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_LDP_SL_DV", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP small leak detect value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17FA"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17FA"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_LDP_EVAPCP", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP incorrect purge flow value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A211"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A211"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_IVS_SW", "path": "Engine",       "fmt": {"bix": 3, "len": 1, "max": 1, "unit": "offon" }, "name": "Idle validation switch"},
     {"id": "MX5_PNP_SW", "path": "Transmission", "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "offon" }, "name": "Park neutral position switch"},
     {"id": "MX5_BPA_SW", "path": "Engine",       "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake pressure applied switch"},
     {"id": "MX5_CPP_SW", "path": "Transmission", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Clutch pedal position switch"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A216"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A216"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_SCCS_V", "path": "Cruise control", "fmt": { "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "Cruise control voltage", "description": "0.0V = On/Off Switch depressed, 1.1V = Cancel depressed, 3.1V = Set/- switch depressed, 4.2V = Res/+ switch depressed, 5.0V = Normal"}
   ]},
