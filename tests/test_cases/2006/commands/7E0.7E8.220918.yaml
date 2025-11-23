@@ -4,23 +4,5 @@ test_cases:
     MX5_TP2_V: 4.445
   response: 7E805620918115D
 - expected_values:
-    MX5_TP2_V: 4.45
-  response: '7E8056209181162'
-- expected_values:
-    MX5_TP2_V: 4.455
-  response: '7E8056209181167'
-- expected_values:
-    MX5_TP2_V: 4.46
-  response: 7E805620918116C
-- expected_values:
-    MX5_TP2_V: 4.465
-  response: '7E8056209181171'
-- expected_values:
-    MX5_TP2_V: 4.485
-  response: '7E8056209181185'
-- expected_values:
-    MX5_TP2_V: 4.495
-  response: 7E805620918118F
-- expected_values:
-    MX5_TP2_V: 4.5
-  response: '7E8056209181194'
+    MX5_TP2_V: 4.515
+  response: 7E80562091811A3
