@@ -1,26 +1,11 @@
 command_id: 7E0.7E8.221177|f=-2015
 test_cases:
 - expected_values:
-    MX5_MAF_V: 5.16
-  response: '7E8056211771428'
-- expected_values:
-    MX5_MAF_V: 5.22
-  response: '7E8056211771464'
-- expected_values:
-    MX5_MAF_V: 5.26
-  response: 7E805621177148C
+    MX5_MAF_V: 5.12
+  response: '7E8056211771400'
 - expected_values:
     MX5_MAF_V: 5.62
   response: 7E80562117715F4
 - expected_values:
-    MX5_MAF_V: 5.68
-  response: '7E8056211771630'
-- expected_values:
-    MX5_MAF_V: 5.7
-  response: '7E8056211771644'
-- expected_values:
-    MX5_MAF_V: 5.72
-  response: '7E8056211771658'
-- expected_values:
-    MX5_MAF_V: 5.78
-  response: '7E8056211771694'
+    MX5_MAF_V: 5.64
+  response: '7E8056211771608'

@@ -5,10 +5,25 @@ test_cases:
   response: 7E8056216CE0000
 - expected_values:
     MX5_VT_DIFF: 4095
+  response: 7E8056216CEFFF6
+- expected_values:
+    MX5_VT_DIFF: 4095
+  response: 7E8056216CEFFF7
+- expected_values:
+    MX5_VT_DIFF: 4095
+  response: 7E8056216CEFFF8
+- expected_values:
+    MX5_VT_DIFF: 4095
+  response: 7E8056216CEFFF9
+- expected_values:
+    MX5_VT_DIFF: 4095
   response: 7E8056216CEFFFA
 - expected_values:
     MX5_VT_DIFF: 4095
   response: 7E8056216CEFFFB
+- expected_values:
+    MX5_VT_DIFF: 4095
+  response: 7E8056216CEFFFE
 - expected_values:
     MX5_VT_DIFF: 4095
   response: 7E8056216CEFFFF
