@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.2216CE|f=-2015
+test_cases:
+- expected_values:
+    MX5_VT_DIFF: 0
+  response: 7E8056216CE0000
+- expected_values:
+    MX5_VT_DIFF: 4095
+  response: 7E8056216CEFFFA
+- expected_values:
+    MX5_VT_DIFF: 4095
+  response: 7E8056216CEFFFB
+- expected_values:
+    MX5_VT_DIFF: 4095
+  response: 7E8056216CEFFFF

@@ -1,0 +1,32 @@
+command_id: 7E0.7E8.2216E8
+test_cases:
+- expected_values:
+    MX5_GEN_FC: 33.3257
+  response: 7E8056216E82AA8
+- expected_values:
+    MX5_GEN_FC: 34.12222
+  response: 7E8056216E82BAD
+- expected_values:
+    MX5_GEN_FC: 34.35416
+  response: 7E8056216E82BF9
+- expected_values:
+    MX5_GEN_FC: 35.7641
+  response: 7E8056216E82DC7
+- expected_values:
+    MX5_GEN_FC: 36.19745
+  response: 7E8056216E82E55
+- expected_values:
+    MX5_GEN_FC: 36.26459
+  response: 7E8056216E82E6B
+- expected_values:
+    MX5_GEN_FC: 37.1191
+  response: 7E8056216E82F83
+- expected_values:
+    MX5_GEN_FC: 37.49142
+  response: 7E8056216E82FFD
+- expected_values:
+    MX5_GEN_FC: 38.00107
+  response: 7E8056216E830A4
+- expected_values:
+    MX5_GEN_FC: 40.32654
+  response: 7E8056216E8339E
