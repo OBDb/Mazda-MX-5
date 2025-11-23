@@ -1,0 +1,23 @@
+command_id: 7E0.7E8.221410|f=-2015
+test_cases:
+- expected_values:
+    MX5_FUEL_PW: 1.728
+  response: 7E80562141000D8
+- expected_values:
+    MX5_FUEL_PW: 1.76
+  response: 7E80562141000DC
+- expected_values:
+    MX5_FUEL_PW: 2.208
+  response: '7E8056214100114'
+- expected_values:
+    MX5_FUEL_PW: 2.216
+  response: '7E8056214100115'
+- expected_values:
+    MX5_FUEL_PW: 2.248
+  response: '7E8056214100119'
+- expected_values:
+    MX5_FUEL_PW: 2.288
+  response: 7E805621410011E
+- expected_values:
+    MX5_FUEL_PW: 2.328
+  response: '7E8056214100123'

@@ -1,0 +1,32 @@
+command_id: 7E0.7E8.2216CF|f=-2015
+test_cases:
+- expected_values:
+    MX5_VT_DUTY: 18.31998
+  response: 7E8056216CF1773
+- expected_values:
+    MX5_VT_DUTY: 18.36271
+  response: 7E8056216CF1781
+- expected_values:
+    MX5_VT_DUTY: 18.38102
+  response: 7E8056216CF1787
+- expected_values:
+    MX5_VT_DUTY: 18.39628
+  response: 7E8056216CF178C
+- expected_values:
+    MX5_VT_DUTY: 18.48783
+  response: 7E8056216CF17AA
+- expected_values:
+    MX5_VT_DUTY: 18.59159
+  response: 7E8056216CF17CC
+- expected_values:
+    MX5_VT_DUTY: 18.64347
+  response: 7E8056216CF17DD
+- expected_values:
+    MX5_VT_DUTY: 18.65568
+  response: 7E8056216CF17E1
+- expected_values:
+    MX5_VT_DUTY: 18.74418
+  response: 7E8056216CF17FE
+- expected_values:
+    MX5_VT_DUTY: 18.80827
+  response: 7E8056216CF1813
