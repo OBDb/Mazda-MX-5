@@ -9,3 +9,6 @@ test_cases:
 - expected_values:
     MX5_GEN_DSD_V: 13.87988
   response: 7E80562097C6F0A
+- expected_values:
+    MX5_GEN_DSD_V: 14.13477
+  response: 7E80562097C7114
