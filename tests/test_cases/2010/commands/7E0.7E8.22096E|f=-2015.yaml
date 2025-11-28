@@ -4,11 +4,11 @@ test_cases:
     MX5_IDLE: 720
   response: 7E80562096E0B40
 - expected_values:
-    MX5_IDLE: 840
-  response: 7E80562096E0D20
+    MX5_IDLE: 829.5
+  response: 7E80562096E0CF6
 - expected_values:
-    MX5_IDLE: 954.5
-  response: 7E80562096E0EEA
+    MX5_IDLE: 960.5
+  response: 7E80562096E0F02
 - expected_values:
-    MX5_IDLE: 985.5
-  response: 7E80562096E0F66
+    MX5_IDLE: 1420.5
+  response: 7E80562096E1632
