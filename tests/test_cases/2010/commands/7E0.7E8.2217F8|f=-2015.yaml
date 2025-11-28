@@ -4,5 +4,8 @@ test_cases:
     MX5_LDP_SL_DV: 0
   response: 7E8056217F80000
 - expected_values:
+    MX5_LDP_SL_DV: 0.0031
+  response: 7E8056217F81596
+- expected_values:
     MX5_LDP_SL_DV: 0.00321
   response: 7E8056217F81659
