@@ -4,5 +4,5 @@ test_cases:
     MX5_GEN_V: 0
   response: 7E8056216E90000
 - expected_values:
-    MX5_GEN_V: 15
-  response: 7E8056216E90078
+    MX5_GEN_V: 15.125
+  response: 7E8056216E90079
