@@ -10,5 +10,5 @@ test_cases:
     MX5_IDLE: 1279.5
   response: 7E80562096E13FE
 - expected_values:
-    MX5_IDLE: 1420.5
-  response: 7E80562096E1632
+    MX5_IDLE: 1418.5
+  response: 7E80562096E162A
