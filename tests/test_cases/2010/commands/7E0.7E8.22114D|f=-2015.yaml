@@ -7,5 +7,5 @@ test_cases:
     MX5_ECT_V: 6.336
   response: 7E80562114D18C0
 - expected_values:
-    MX5_ECT_V: 48
-  response: 7E80562114DBB80
+    MX5_ECT_V: 48.768
+  response: 7E80562114DBE80
