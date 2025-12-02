@@ -249,23 +249,23 @@
   "signals": [
     {"id": "MX5_KNOCKR", "path": "Engine", "fmt": { "len": 8, "max": 89.78, "mul": 100, "div": 284, "unit": "degrees" }, "name": "Knock retard"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F4"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F4"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2005, "years": [2007, 2008, 2009, 2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_LDP_MON_CURRENT", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP monitoring current"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F5"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F5"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2005, "years": [2007, 2008, 2009, 2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_LDP_REF_CURRENT", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP reference current"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F7"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F7"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2005, "years": [2007, 2008, 2009, 2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_LDP_IDL_CURRENT", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP idle current"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F8"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17F8"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2005, "years": [2007, 2008, 2009, 2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_LDP_SL_DV", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP small leak detect value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17FA"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2009, "years": [2012, 2013, 2014] },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "17FA"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2005, "years": [2007, 2008, 2009, 2012, 2013, 2014] },
   "signals": [
     {"id": "MX5_LDP_EVAPCP", "path": "Emissions", "fmt": { "len": 16, "max": 0.037, "mul": 0.000000561, "unit": "amps" }, "name": "EVAP LDP incorrect purge flow value"}
   ]},
