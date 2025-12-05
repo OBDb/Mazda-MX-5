@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.220914
+test_cases:
+- expected_values:
+    MX5_APP1_V: 0.78
+  response: 7E805620914030C
+- expected_values:
+    MX5_APP1_V: 1.475
+  response: 7E80562091405C3
+- expected_values:
+    MX5_APP1_V: 1.581
+  response: 7E805620914062D
