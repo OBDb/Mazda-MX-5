@@ -1,17 +1,17 @@
 { "commands": [
-{ "hdr": "720", "rax": "728", "cmd": {"22": "2A05"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2018, "from": 2021 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "2A05"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018], "from": 2021 },
   "signals": [
     {"id": "MX5_TP_1_ND", "path": "Tires", "fmt": { "len": 8, "max": 3.5, "mul": 1373, "div": 100000, "unit": "bars" }, "name": "Wheel 1 pressure"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "2A06"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2018, "from": 2021 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "2A06"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018], "from": 2021 },
   "signals": [
     {"id": "MX5_TP_2_ND", "path": "Tires", "fmt": { "len": 8, "max": 3.5, "mul": 1373, "div": 100000, "unit": "bars" }, "name": "Wheel 2 pressure"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "2A07"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2018, "from": 2021 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "2A07"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018], "from": 2021 },
   "signals": [
     {"id": "MX5_TP_3_ND", "path": "Tires", "fmt": { "len": 8, "max": 3.5, "mul": 1373, "div": 100000, "unit": "bars" }, "name": "Wheel 3 pressure"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "2A08"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2018, "from": 2021 },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "2A08"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018], "from": 2021 },
   "signals": [
     {"id": "MX5_TP_4_ND", "path": "Tires", "fmt": { "len": 8, "max": 3.5, "mul": 1373, "div": 100000, "unit": "bars" }, "name": "Wheel 4 pressure"}
   ]},
