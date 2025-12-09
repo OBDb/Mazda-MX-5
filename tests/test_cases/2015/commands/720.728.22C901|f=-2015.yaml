@@ -1,14 +1,12 @@
 command_id: 720.728.22C901|f=-2015
 test_cases:
 - expected_values:
+    MX5_TP_RL: 28.6
+    MX5_TP_RR: 27.8
+  response: 7280762C90100008F8B
+- expected_values:
     MX5_TP_FR: 24.4
   response: 7280762C901007A0000
-- expected_values:
-    MX5_TP_FL: 19.8
-    MX5_TP_FR: 19.6
-    MX5_TP_RL: 22
-    MX5_TP_RR: 20.2
-  response: 7280762C90163626E65
 - expected_values:
     MX5_TP_FL: 27.8
     MX5_TP_FR: 27.4
@@ -16,20 +14,14 @@ test_cases:
     MX5_TP_RR: 28.2
   response: 7280762C9018B899A8D
 - expected_values:
-    MX5_TP_FL: 27.8
-    MX5_TP_FR: 28
-    MX5_TP_RL: 30.4
-    MX5_TP_RR: 28.4
-  response: 7280762C9018B8C988E
-- expected_values:
     MX5_TP_FL: 28
     MX5_TP_FR: 27.6
     MX5_TP_RL: 30.6
     MX5_TP_RR: 28.8
   response: 7280762C9018C8A9990
 - expected_values:
-    MX5_TP_FL: 28.2
-    MX5_TP_FR: 27.6
-    MX5_TP_RL: 30.6
-    MX5_TP_RR: 28.4
-  response: 7280762C9018D8A998E
+    MX5_TP_FL: 28.8
+    MX5_TP_FR: 29.2
+    MX5_TP_RL: 29.6
+    MX5_TP_RR: 28.6
+  response: 7280762C9019092948F

@@ -1,6 +1,9 @@
 command_id: 7E0.7E8.2217F7|f=-2015
 test_cases:
 - expected_values:
+    MX5_LDP_IDL_CURRENT: 0.01533
+  response: 7E8056217F76ABB
+- expected_values:
     MX5_LDP_IDL_CURRENT: 0.01572
   response: 7E8056217F76D7B
 - expected_values:

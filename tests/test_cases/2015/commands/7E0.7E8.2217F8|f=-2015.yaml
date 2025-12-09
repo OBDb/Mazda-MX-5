@@ -1,5 +1,8 @@
 command_id: 7E0.7E8.2217F8|f=-2015
 test_cases:
 - expected_values:
+    MX5_LDP_SL_DV: 0.00255
+  response: 7E8056217F811C7
+- expected_values:
     MX5_LDP_SL_DV: 0.00268
   response: 7E8056217F812B1

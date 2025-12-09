@@ -4,5 +4,8 @@ test_cases:
     MX5_LDP_EVAPCP: 0
   response: 7E8056217FA0000
 - expected_values:
+    MX5_LDP_EVAPCP: 0.01501
+  response: 7E8056217FA688C
+- expected_values:
     MX5_LDP_EVAPCP: 0.01543
   response: 7E8056217FA6B6F
