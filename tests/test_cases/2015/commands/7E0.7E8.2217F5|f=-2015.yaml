@@ -7,5 +7,5 @@ test_cases:
     MX5_LDP_REF_CURRENT: 0.02154
   response: 7E8056217F595FC
 - expected_values:
-    MX5_LDP_REF_CURRENT: 0.02169
-  response: 7E8056217F59700
+    MX5_LDP_REF_CURRENT: 0.02233
+  response: 7E8056217F59B80
