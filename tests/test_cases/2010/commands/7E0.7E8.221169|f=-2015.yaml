@@ -15,3 +15,6 @@ test_cases:
 - expected_values:
     MX5_TPCT: 94.64062
   response: 7E80562116917A9
+- expected_values:
+    MX5_TPCT: 95.82812
+  response: 7E80562116917F5
