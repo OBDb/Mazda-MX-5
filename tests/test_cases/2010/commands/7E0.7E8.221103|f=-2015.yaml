@@ -9,6 +9,12 @@ test_cases:
 - expected_values:
     MX5_FAN1_SW: 0
     MX5_FAN2_SW: 0
+    MX5_IMRC_SW: 1
+    MX5_MIL_SW: 0
+  response: '7E80462110310'
+- expected_values:
+    MX5_FAN1_SW: 0
+    MX5_FAN2_SW: 0
     MX5_IMRC_SW: 0
     MX5_MIL_SW: 1
   response: '7E80462110320'
