@@ -1,8 +1,8 @@
 command_id: 7E0.7E8.220914
 test_cases:
 - expected_values:
-    MX5_APP1_V: 1.615
-  response: 7E805620914064F
+    MX5_APP1_V: 0.786
+  response: '7E8056209140312'
 - expected_values:
     MX5_APP1_V: 1.785
   response: 7E80562091406F9
