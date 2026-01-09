@@ -8,26 +8,26 @@ test_cases:
     MX5_TP_FR: 24.4
   response: 7280762C901007A0000
 - expected_values:
-    MX5_TP_FL: 34.2
-    MX5_TP_FR: 34.6
-    MX5_TP_RL: 33.4
-    MX5_TP_RR: 34.6
-  response: 7280762C901ABADA7AD
+    MX5_TP_FL: 34.8
+    MX5_TP_FR: 35.4
+    MX5_TP_RL: 34
+    MX5_TP_RR: 35
+  response: 7280762C901AEB1AAAF
 - expected_values:
-    MX5_TP_FL: 34.4
-    MX5_TP_FR: 34.6
-    MX5_TP_RL: 33.6
-    MX5_TP_RR: 34.4
-  response: 7280762C901ACADA8AC
+    MX5_TP_FL: 34.8
+    MX5_TP_FR: 35.4
+    MX5_TP_RL: 34
+    MX5_TP_RR: 35.4
+  response: 7280762C901AEB1AAB1
 - expected_values:
-    MX5_TP_FL: 34.4
+    MX5_TP_FL: 35
     MX5_TP_FR: 35
-    MX5_TP_RL: 33.6
-    MX5_TP_RR: 34.6
-  response: 7280762C901ACAFA8AD
+    MX5_TP_RL: 33.8
+    MX5_TP_RR: 35
+  response: 7280762C901AFAFA9AF
 - expected_values:
-    MX5_TP_FL: 34.6
-    MX5_TP_FR: 34.6
-    MX5_TP_RL: 33.4
-    MX5_TP_RR: 34.4
-  response: 7280762C901ADADA7AC
+    MX5_TP_FL: 35
+    MX5_TP_FR: 35.6
+    MX5_TP_RL: 33.8
+    MX5_TP_RR: 35
+  response: 7280762C901AFB2A9AF
