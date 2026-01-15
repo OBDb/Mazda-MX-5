@@ -7,8 +7,8 @@ test_cases:
     MX5_EOT: 18.89
   response: '7E8056213101701'
 - expected_values:
-    MX5_EOT: 87.99
-  response: 7E80562131031FF
+    MX5_EOT: 59.83
+  response: 7E80562131026FF
 - expected_values:
     MX5_EOT: 104.12
   response: 7E805621310384C
