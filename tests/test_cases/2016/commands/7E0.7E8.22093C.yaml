@@ -1,14 +1,14 @@
 command_id: 7E0.7E8.22093C
 test_cases:
 - expected_values:
-    MX5_ETC_ACT_DEG: 0.25781
-  response: 7E80562093C0084
-- expected_values:
-    MX5_ETC_ACT_DEG: 5.97852
-  response: 7E80562093C0BF5
+    MX5_ETC_ACT_DEG: 0.25586
+  response: 7E80562093C0083
 - expected_values:
     MX5_ETC_ACT_DEG: 6
   response: 7E80562093C0C00
+- expected_values:
+    MX5_ETC_ACT_DEG: 31.48047
+  response: 7E80562093C3EF6
 - expected_values:
     MX5_ETC_ACT_DEG: 86.13477
   response: 7E80562093CAC45

@@ -7,8 +7,8 @@ test_cases:
     MX5_TP1_V: 0.519
   response: '7E8056209170207'
 - expected_values:
-    MX5_TP1_V: 0.766
-  response: 7E80562091702FE
+    MX5_TP1_V: 1.279
+  response: 7E80562091704FF
 - expected_values:
     MX5_TP1_V: 4.664
   response: '7E8056209171238'
