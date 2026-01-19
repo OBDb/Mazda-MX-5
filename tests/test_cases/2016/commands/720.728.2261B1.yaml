@@ -1,8 +1,8 @@
 command_id: 720.728.2261B1
 test_cases:
 - expected_values:
-    MX5_FLV: 8
-  response: 728046261B108
+    MX5_FLV: 4
+  response: 728046261B104
 - expected_values:
     MX5_FLV: 41
   response: 728046261B129
