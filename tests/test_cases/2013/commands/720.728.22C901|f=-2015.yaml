@@ -1,0 +1,8 @@
+command_id: 720.728.22C901|f=-2015
+test_cases:
+- expected_values:
+    MX5_TP_FL: 28.4
+    MX5_TP_FR: 33
+    MX5_TP_RL: 32.8
+    MX5_TP_RR: 33.2
+  response: 7280762C9018EA5A4A6

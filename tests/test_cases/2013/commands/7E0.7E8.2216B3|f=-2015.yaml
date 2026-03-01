@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.2216B3|f=-2015
+test_cases:
+- expected_values:
+    MX5_BARO_V: 47.488
+  response: 7E8056216B3B980
