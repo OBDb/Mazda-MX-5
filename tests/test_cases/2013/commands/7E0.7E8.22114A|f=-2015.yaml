@@ -12,3 +12,6 @@ test_cases:
 - expected_values:
     MX5_IAT_V: 27.008
   response: 7E80562114A6980
+- expected_values:
+    MX5_IAT_V: 31.104
+  response: 7E80562114A7980
