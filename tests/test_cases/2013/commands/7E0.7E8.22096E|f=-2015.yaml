@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.22096E|f=-2015
+test_cases:
+- expected_values:
+    MX5_IDLE: 849.5
+  response: 7E80562096E0D46
+- expected_values:
+    MX5_IDLE: 870
+  response: 7E80562096E0D98
+- expected_values:
+    MX5_IDLE: 879
+  response: 7E80562096E0DBC
+- expected_values:
+    MX5_IDLE: 894.5
+  response: 7E80562096E0DFA
