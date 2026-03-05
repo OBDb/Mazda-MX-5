@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     MX5_TT_4_ND: 31
   response: 72804622A0D51
+- expected_values:
+    MX5_TT_4_ND: 41
+  response: 72804622A0D5B
