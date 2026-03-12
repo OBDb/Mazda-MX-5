@@ -20,10 +20,10 @@ test_cases:
   response: 7280762C901888E8D89
 - expected_values:
     MX5_TP_FL: 38.6
-    MX5_TP_FR: 38.4
+    MX5_TP_FR: 37.8
     MX5_TP_RL: 0.2
-    MX5_TP_RR: 38.4
-  response: 7280762C901C1C001C0
+    MX5_TP_RR: 34.8
+  response: 7280762C901C1BD01AE
 - expected_values:
     MX5_TP_FL: 39.2
     MX5_TP_FR: 38.8
