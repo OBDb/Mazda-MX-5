@@ -15,3 +15,6 @@ test_cases:
 - expected_values:
     MX5_FUEL_PW: 1.952
   response: 7E80562141000F4
+- expected_values:
+    MX5_FUEL_PW: 2.48
+  response: '7E8056214100136'

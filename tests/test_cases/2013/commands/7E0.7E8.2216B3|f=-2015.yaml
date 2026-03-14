@@ -4,5 +4,8 @@ test_cases:
     MX5_BARO_V: 47.488
   response: 7E8056216B3B980
 - expected_values:
+    MX5_BARO_V: 47.552
+  response: 7E8056216B3B9C0
+- expected_values:
     MX5_BARO_V: 47.68
   response: 7E8056216B3BA40
