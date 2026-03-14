@@ -7,6 +7,9 @@ test_cases:
     MX5_IDLE: 870
   response: 7E80562096E0D98
 - expected_values:
+    MX5_IDLE: 875
+  response: 7E80562096E0DAC
+- expected_values:
     MX5_IDLE: 879
   response: 7E80562096E0DBC
 - expected_values:
