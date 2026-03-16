@@ -9,5 +9,10 @@ test_cases:
     7E803410F2A
     7E803410F2A
 - expected_values:
+    IAT: 10
+  response: |-
+    7E803410F32
+    7E803410F32
+- expected_values:
     IAT: 64
   response: 7E803410F68
