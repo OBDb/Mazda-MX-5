@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.220200|f=-2015
+test_cases:
+- expected_values:
+    MX5_DTC_CNT: 0
+  response: '7E80462020000'
