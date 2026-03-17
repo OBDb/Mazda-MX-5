@@ -10,5 +10,8 @@ test_cases:
     MX5_MAP: 1.533
   response: 7E80562030105FD
 - expected_values:
+    MX5_MAP: 1.786
+  response: 7E80562030106FA
+- expected_values:
     MX5_MAP: 4
   response: '7E8056203011078'
