@@ -4,6 +4,9 @@ test_cases:
     MX5_TP_1_ND: 1.85355
   response: 72804622A0587
 - expected_values:
+    MX5_TP_1_ND: 1.88101
+  response: 72804622A0589
+- expected_values:
     MX5_TP_1_ND: 1.94966
   response: 72804622A058E
 - expected_values:
