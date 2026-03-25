@@ -19,5 +19,5 @@ test_cases:
     7E803410F4A
     7E803410F4A
 - expected_values:
-    IAT: 69
-  response: 7E803410F6D
+    IAT: 75
+  response: 7E803410F73
