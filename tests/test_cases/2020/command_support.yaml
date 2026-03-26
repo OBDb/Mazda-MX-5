@@ -11,6 +11,7 @@ supported_commands_by_ecu:
   - 720.728.222A0D|f=2016-:MX5_TT_4_ND
   - 720.728.2261B1:MX5_FLV
   "7DF":
+  - 7DF.0106
   - 7DF.0110
   - 7DF.012F
   "7E0":
