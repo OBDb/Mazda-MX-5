@@ -4,26 +4,8 @@ test_cases:
     RUNTM: 5
   response: 7E804411F0005
 - expected_values:
-    RUNTM: 36
-  response: 7E804411F0024
+    RUNTM: 245
+  response: 7E804411F00F5
 - expected_values:
-    RUNTM: 66
-  response: 7E804411F0042
-- expected_values:
-    RUNTM: 114
-  response: 7E804411F0072
-- expected_values:
-    RUNTM: 118
-  response: 7E804411F0076
-- expected_values:
-    RUNTM: 148
-  response: 7E804411F0094
-- expected_values:
-    RUNTM: 179
-  response: 7E804411F00B3
-- expected_values:
-    RUNTM: 209
-  response: 7E804411F00D1
-- expected_values:
-    RUNTM: 239
-  response: 7E804411F00EF
+    RUNTM: 1597
+  response: 7E804411F063D
