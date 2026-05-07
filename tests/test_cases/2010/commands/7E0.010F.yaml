@@ -19,10 +19,10 @@ test_cases:
     7E803410F3D
     7E803410F3D
 - expected_values:
-    IAT: 31
+    IAT: 30
   response: |-
-    7E803410F47
-    7E803410F47
+    7E803410F46
+    7E803410F46
 - expected_values:
     IAT: 34
   response: |-
