@@ -35,6 +35,7 @@ supported_commands_by_ecu:
   - 012F:FLI
   - 0130:WARM_UPS
   - 0131:CLR_DIST
+  - 0132:EVAP_VP
   - 0133:BARO
   - 0134:LAMBDA11_CURRENT,O2S11_CURRENT
   - 013C:CATEMP11
@@ -69,6 +70,7 @@ supported_commands_by_ecu:
   - 7E0.7E8.22093C:MX5_ETC_ACT_DEG
   - 7E0.7E8.221310|f=2016-:MX5_EOT
   - 7E0.7E8.2216E8:MX5_GEN_FC
+  - 7E0.7E8.2216E9:MX5_GEN_V
 unsupported_commands_by_ecu:
   "720":
   - 720.728.22C901
@@ -119,7 +121,6 @@ unsupported_commands_by_ecu:
   - 7E0.7E8.2216CD
   - 7E0.7E8.2216CE
   - 7E0.7E8.2216CF
-  - 7E0.7E8.2216E9:MX5_GEN_V
   - 7E0.7E8.2216F0
   - 7E0.7E8.221706
   - 7E0.7E8.221718

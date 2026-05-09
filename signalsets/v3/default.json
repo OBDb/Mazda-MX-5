@@ -228,7 +228,7 @@
   "signals": [
     {"id": "MX5_GEN_FC", "path": "Engine", "fmt": { "len": 16, "max": 200, "mul": 200, "div": 65535, "unit": "percent" }, "name": "Generator field coil control duty"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16E9"}, "freq": 1, "dbgfilter": { "to": 2005, "years": [2007, 2008, 2012, 2014, 2017, 2018, 2019, 2022, 2023], "from": 2026 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16E9"}, "freq": 1, "dbgfilter": { "to": 2005, "years": [2007, 2008, 2012, 2014, 2017, 2018, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "MX5_GEN_V", "path": "Engine", "fmt": { "len": 16, "max": 8191.875, "div": 8, "unit": "volts" }, "name": "Generator output voltage"}
   ]},
