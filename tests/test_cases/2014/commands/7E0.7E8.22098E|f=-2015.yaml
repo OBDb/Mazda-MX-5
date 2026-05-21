@@ -9,3 +9,6 @@ test_cases:
 - expected_values:
     MX5_EGRP_STEPS: 19
   response: 7E80562098E0013
+- expected_values:
+    MX5_EGRP_STEPS: 23
+  response: 7E80562098E0017
