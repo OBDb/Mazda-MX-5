@@ -19,5 +19,10 @@ test_cases:
     7E803410D83
     7E803410D83
 - expected_values:
+    VSS: 138
+  response: |-
+    7E803410D8A
+    CAN ERROR
+- expected_values:
     VSS: 165
   response: 7E803410DA5
