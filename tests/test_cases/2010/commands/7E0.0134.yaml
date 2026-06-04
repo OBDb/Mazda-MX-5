@@ -88,3 +88,9 @@ test_cases:
   response: |-
     7E8064134B20B8160
     7E8064134B20B81B9
+- expected_values:
+    LAMBDA11_CURRENT: 1.39365
+    O2S11_CURRENT: 1.72266
+  response: |-
+    7E8064134B26381B9
+    CAN ERROR
