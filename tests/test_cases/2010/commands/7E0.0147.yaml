@@ -19,10 +19,10 @@ test_cases:
     7E803414720
     7E803414720
 - expected_values:
-    TP_B: 32.54902
+    TP_B: 48.62745
   response: |-
-    7E80341474D
-    7E803414753
+    7E803414772
+    7E80341477C
 - expected_values:
     TP_B: 90.58824
   response: 7E8034147E7
