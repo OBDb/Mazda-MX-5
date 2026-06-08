@@ -21,11 +21,6 @@ test_cases:
     > 726.72E.22D922|f=-2016
     NO DATA
 - expected_values:
-    CLR_DIST: 6195
-  response: |-
-    7E80441311832
-    7E80441311833
-- expected_values:
     CLR_DIST: 7788
   response: |-
     7E80441311E6B
@@ -41,5 +36,10 @@ test_cases:
     7E8044131350F
     7E8044131350F
 - expected_values:
-    CLR_DIST: 14080
-  response: '7E80441313700'
+    CLR_DIST: 14305
+  response: |-
+    7E804413137E1
+    7E804413137E1
+- expected_values:
+    CLR_DIST: 14336
+  response: '7E80441313800'
