@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.221746|f=-2015
+test_cases:
+- expected_values:
+    MX5_KNOCKR: 0
+  response: '7E80462174600'

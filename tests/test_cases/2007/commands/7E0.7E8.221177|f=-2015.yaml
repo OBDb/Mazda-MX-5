@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.221177|f=-2015
+test_cases:
+- expected_values:
+    MX5_MAF_V: 4.88
+  response: '7E8056211771310'
+- expected_values:
+    MX5_MAF_V: 5.64
+  response: '7E8056211771608'
+- expected_values:
+    MX5_MAF_V: 5.88
+  response: 7E80562117716F8
+- expected_values:
+    MX5_MAF_V: 7.18
+  response: 7E8056211771C0C

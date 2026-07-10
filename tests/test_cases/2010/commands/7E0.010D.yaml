@@ -1,0 +1,28 @@
+command_id: 7E0.010D
+test_cases:
+- expected_values:
+    VSS: 0
+  response: 7E803410D00
+- expected_values:
+    VSS: 0
+  response: |-
+    7E803410D00
+    7E803410D00
+- expected_values:
+    VSS: 62
+  response: |-
+    7E803410D33
+    7E803410D3E
+- expected_values:
+    VSS: 131
+  response: |-
+    7E803410D83
+    7E803410D83
+- expected_values:
+    VSS: 138
+  response: |-
+    7E803410D8A
+    CAN ERROR
+- expected_values:
+    VSS: 165
+  response: 7E803410DA5
