@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.2216CD|f=-2015
+test_cases:
+- expected_values:
+    MX5_VT_ACT: 0
+  response: 7E8056216CD0000
+- expected_values:
+    MX5_VT_ACT: 15.875
+  response: 7E8056216CD00FE
+- expected_values:
+    MX5_VT_ACT: 16
+  response: 7E8056216CD0100
