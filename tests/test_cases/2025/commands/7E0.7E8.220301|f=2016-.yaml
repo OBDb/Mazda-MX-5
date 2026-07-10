@@ -1,8 +1,8 @@
 command_id: 7E0.7E8.220301|f=2016-
 test_cases:
 - expected_values:
-    MX5_MAP: 0.921
-  response: '7E8056203010399'
+    MX5_MAP: 0.833
+  response: '7E8056203010341'
 - expected_values:
     MX5_MAP: 1.278
   response: 7E80562030104FE
