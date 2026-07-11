@@ -74,10 +74,6 @@ test_cases:
   response: 7E8064134B08D810F
 - expected_values:
     LAMBDA11_CURRENT: 1.39096
-    O2S11_CURRENT: 0.74609
-  response: 7E8064134B20B80BF
-- expected_values:
-    LAMBDA11_CURRENT: 1.39096
     O2S11_CURRENT: 1.72266
   response: |-
     7E8064134B20B8160
@@ -88,3 +84,7 @@ test_cases:
   response: |-
     7E8064134B26381B9
     CAN ERROR
+- expected_values:
+    LAMBDA11_CURRENT: 1.41452
+    O2S11_CURRENT: 1.72266
+  response: 7E8064134B50F81B9
