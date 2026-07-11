@@ -1,8 +1,8 @@
 command_id: 7E0.7E8.22163E|f=-2015
 test_cases:
 - expected_values:
-    MX5_O2S12_FT: 0.03662
-  response: 7E80562163E0003
+    MX5_O2S12_FT: 0
+  response: 7E80562163E0000
 - expected_values:
     MX5_O2S12_FT: 799.79248
   response: 7E80562163EFFEF
