@@ -1,8 +1,8 @@
 command_id: 720.728.22C901|f=-2015
 test_cases:
 - expected_values:
-    MX5_TP_RR: 36.6
-  response: 7280762C901000000B7
+    MX5_TP_RR: 33.6
+  response: 7280762C901000000A8
 - expected_values:
     MX5_TP_FL: 27.2
     MX5_TP_FR: 28.4
