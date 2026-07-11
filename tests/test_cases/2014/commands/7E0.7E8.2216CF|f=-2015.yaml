@@ -7,8 +7,8 @@ test_cases:
     MX5_VT_DUTY: 13.2784
   response: 7E8056216CF10FF
 - expected_values:
-    MX5_VT_DUTY: 20.31281
-  response: 7E8056216CF1A00
+    MX5_VT_DUTY: 17.18776
+  response: 7E8056216CF1600
 - expected_values:
     MX5_VT_DUTY: 89.51247
   response: 7E8056216CF7293
