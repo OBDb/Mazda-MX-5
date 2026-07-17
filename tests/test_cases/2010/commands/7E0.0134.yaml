@@ -27,12 +27,6 @@ test_cases:
     O2S11_CURRENT: -1.00391
   response: 7E806413466AC7EFF
 - expected_values:
-    LAMBDA11_CURRENT: 0.93686
-    O2S11_CURRENT: -0.26953
-  response: |-
-    7E806413477E97FBC
-    7E806413477EB7FBB
-- expected_values:
     LAMBDA11_CURRENT: 0.9837
     O2S11_CURRENT: -0.06641
   response: |-
@@ -44,6 +38,12 @@ test_cases:
   response: |-
     7E80641347E767FF4
     7E80641347E777FF4
+- expected_values:
+    LAMBDA11_CURRENT: 0.99158
+    O2S11_CURRENT: -0.03516
+  response: |-
+    7E80641347EEC7FF7
+    7E80641347EEC7FF7
 - expected_values:
     LAMBDA11_CURRENT: 0.99274
     O2S11_CURRENT: -0.02734
