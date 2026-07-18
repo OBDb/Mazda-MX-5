@@ -2,10 +2,22 @@ command_id: 720.728.22C902|f=-2015
 test_cases:
 - expected_values:
     MX5_TT_FL: 80.6
+    MX5_TT_FR: 82.4
+    MX5_TT_RL: 82.4
+    MX5_TT_RR: 80.6
+  response: 7280762C9024D4E4E4D
+- expected_values:
+    MX5_TT_FL: 80.6
     MX5_TT_FR: 86
     MX5_TT_RL: 82.4
     MX5_TT_RR: 84.2
   response: 7280762C9024D504E4F
+- expected_values:
+    MX5_TT_FL: 84.2
+    MX5_TT_FR: 89.6
+    MX5_TT_RL: 93.2
+    MX5_TT_RR: 84.2
+  response: 7280762C9024F52544F
 - expected_values:
     MX5_TT_FL: 87.8
     MX5_TT_FR: 89.6
