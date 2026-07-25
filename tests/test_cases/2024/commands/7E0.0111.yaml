@@ -12,3 +12,6 @@ test_cases:
 - expected_values:
     TP: 13.72549
   response: '7E803411123'
+- expected_values:
+    TP: 21.96078
+  response: '7E803411138'
