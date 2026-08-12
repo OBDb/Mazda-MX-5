@@ -24,5 +24,10 @@ test_cases:
     7E803410F53
     NO DATA
 - expected_values:
+    IAT: 52
+  response: |-
+    7E803410F59
+    7E803410F5C
+- expected_values:
     IAT: 78
   response: 7E803410F76

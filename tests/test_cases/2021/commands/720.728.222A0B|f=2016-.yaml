@@ -13,5 +13,20 @@ test_cases:
     MX5_TT_2_ND: 28
   response: 72804622A0B4E
 - expected_values:
+    MX5_TT_2_ND: 39
+  response: 72804622A0B59
+- expected_values:
+    MX5_TT_2_ND: 40
+  response: 72804622A0B5A
+- expected_values:
     MX5_TT_2_ND: 41
   response: 72804622A0B5B
+- expected_values:
+    MX5_TT_2_ND: 43
+  response: 72804622A0B5D
+- expected_values:
+    MX5_TT_2_ND: 44
+  response: 72804622A0B5E
+- expected_values:
+    MX5_TT_2_ND: 45
+  response: 72804622A0B5F
