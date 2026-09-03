@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.220967
+test_cases:
+- expected_values:
+    MX5_FAN3_SW: 0
+  response: '7E8056209670000'
+- expected_values:
+    MX5_FAN3_SW: 0
+  response: '7E8056209670004'
