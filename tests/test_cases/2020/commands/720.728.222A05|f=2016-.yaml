@@ -1,0 +1,8 @@
+command_id: 720.728.222A05|f=2016-
+test_cases:
+- expected_values:
+    MX5_TP_1_ND: 2.27918
+  response: 72804622A05A6
+- expected_values:
+    MX5_TP_1_ND: 2.8833
+  response: 72804622A05D2

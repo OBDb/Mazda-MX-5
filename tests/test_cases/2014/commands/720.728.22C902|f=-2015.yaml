@@ -1,0 +1,20 @@
+command_id: 720.728.22C902|f=-2015
+test_cases:
+- expected_values:
+    MX5_TT_FL: 62.6
+    MX5_TT_FR: 62.6
+    MX5_TT_RL: 62.6
+    MX5_TT_RR: 64.4
+  response: 7280762C90243434344
+- expected_values:
+    MX5_TT_FL: 75.2
+    MX5_TT_FR: 62.6
+    MX5_TT_RL: 62.6
+    MX5_TT_RR: 75.2
+  response: 7280762C9024A43434A
+- expected_values:
+    MX5_TT_FL: 75.2
+    MX5_TT_FR: 71.6
+    MX5_TT_RL: 71.6
+    MX5_TT_RR: 75.2
+  response: 7280762C9024A48484A

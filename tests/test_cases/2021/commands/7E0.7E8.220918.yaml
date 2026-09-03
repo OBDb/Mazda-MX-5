@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.220918
+test_cases:
+- expected_values:
+    MX5_TP2_V: 3.789
+  response: 7E8056209180ECD
+- expected_values:
+    MX5_TP2_V: 4.093
+  response: 7E8056209180FFD
+- expected_values:
+    MX5_TP2_V: 4.442
+  response: 7E805620918115A
