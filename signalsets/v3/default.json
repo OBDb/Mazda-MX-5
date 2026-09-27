@@ -1,4 +1,8 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "7E0", "type": "engine" },
+    { "hdr": "7E1", "type": "transmission" }
+  ],
+  "commands": [
 { "hdr": "720", "rax": "728", "cmd": {"22": "2A05"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2022], "from": 2024 },
   "signals": [
     {"id": "MX5_TP_1_ND", "path": "Tires", "fmt": { "len": 8, "max": 3.5, "mul": 1373, "div": 100000, "unit": "bars" }, "name": "Wheel 1 pressure"}
