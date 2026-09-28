@@ -85,6 +85,10 @@
   "signals": [
     {"id": "MX5_TT_RR_ND", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Rear right temperature"}
   ]},
+{ "hdr": "726", "rax": "72E", "dbg": true, "cmd": {"22": "DA05"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_BRAKE_SWITCH", "path": "Control", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Brake switch"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0200"}, "freq": 3600, "filter": { "to": 2015 }, "dbgfilter": { "to": 2005, "years": [2008, 2012] },
   "signals": [
     {"id": "MX5_DTC_CNT", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of DTCs"}
@@ -166,6 +170,10 @@
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1104"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2005, "years": [2008, 2012] },
   "signals": [
     {"id": "MX5_AC_REQ_SW", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "A/C refrigerant pressure switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "111F"}, "freq": 5,
+  "signals": [
+    {"id": "MX5_EOT_2", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Engine oil temperature 2", "suggestedMetric": "engineOilTemperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "114A"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2005, "years": [2008, 2012] },
   "signals": [
@@ -284,6 +292,10 @@
   "signals": [
     {"id": "MX5_SCCS_V", "path": "Cruise control", "fmt": { "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "Cruise control voltage", "description": "0.0V = On/Off Switch depressed, 1.1V = Cancel depressed, 3.1V = Set/- switch depressed, 4.2V = Res/+ switch depressed, 5.0V = Normal"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F433"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_BAROMETRIC_P", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Barometric pressure"}
+  ]},
 { "hdr": "7E1", "rax": "7E9", "cmd": {"22": "17B3"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2016 },
   "signals": [
     {"id": "MX5_TRANS_T_V5", "path": "Transmission", "fmt": { "len": 8, "max": 371.4, "min": -57, "mul": 42, "div": 25, "add": -57, "unit": "fahrenheit" }, "name": "Transmission temperature v5"}
@@ -291,6 +303,18 @@
 { "hdr": "7E1", "rax": "7E9", "cmd": {"22": "1E1C"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "MX5_TRANS_T_V6", "path": "Transmission", "fmt": { "len": 16, "max": 7000, "mul": 9, "div": 80, "add": 32, "unit": "fahrenheit" }, "name": "Transmission temperature v6"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1E24"}, "freq": 1,
+  "signals": [
+    {"id": "MX5_TQ_CONV_LOCK_UP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Torque converter lock-up"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1EC7"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_TQ_DES", "path": "Engine", "fmt": { "len": 16, "max": 655, "min": -655, "div": 50, "sign": true, "unit": "newtonMeters" }, "name": "Torque, desired"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1EE4"}, "freq": 0.25,
+  "signals": [
+    {"id": "MX5_TQ_ACT", "path": "Engine", "fmt": { "len": 16, "max": 655, "min": -655, "div": 50, "sign": true, "unit": "newtonMeters" }, "name": "Torque, actual"}
   ]}
 ]
 }
