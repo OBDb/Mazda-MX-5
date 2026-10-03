@@ -89,6 +89,7 @@ supported_commands_by_ecu:
   - 7E0.7E8.22F433:MX5_BAROMETRIC_P
   "7E1":
   - 7E1.7E9.0104
+  - 7E1.7E9.0105
   - 7E1.7E9.010C
   - 7E1.7E9.010D
   - 7E1.7E9.221E1C:MX5_TRANS_T_V6
