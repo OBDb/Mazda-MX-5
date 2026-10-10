@@ -302,7 +302,7 @@
   ]},
 { "hdr": "7E1", "rax": "7E9", "cmd": {"22": "1E1C"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
-    {"id": "MX5_TRANS_T_V6", "path": "Transmission", "fmt": { "len": 16, "max": 7000, "mul": 9, "div": 80, "add": 32, "unit": "fahrenheit" }, "name": "Transmission temperature v6"}
+    {"id": "MX5_TRANS_T_V6", "path": "Transmission", "fmt": { "len": 16, "max": 500, "min": -500, "div": 16, "sign": true, "unit": "celsius" }, "name": "Transmission temperature v6"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1E24"}, "freq": 1,
   "signals": [
