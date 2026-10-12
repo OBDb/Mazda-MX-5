@@ -1,0 +1,11 @@
+command_id: 726.72E.22D926
+test_cases:
+- expected_values:
+    MX5_TT_FL_ND: 14
+  response: 72E0462D92640
+- expected_values:
+    MX5_TT_FL_ND: 52
+  response: 72E0462D92666
+- expected_values:
+    MX5_TT_FL_ND: null
+  response: 72E0462D926FE
