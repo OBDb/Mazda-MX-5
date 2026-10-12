@@ -218,7 +218,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "163E"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2005, "years": [2008, 2012] },
   "signals": [
-    {"id": "MX5_O2S12_FT", "path": "Engine", "fmt": { "len": 16, "max": 799.98, "mul": 100, "div": 8192, "unit": "percent" }, "name": "Rear O2 sensor fuel trim"}
+    {"id": "MX5_O2S12_FT", "path": "Engine", "fmt": { "len": 16, "max": 399.98, "min": -400, "mul": 100, "div": 8192, "sign": true, "unit": "percent" }, "name": "Rear O2 sensor fuel trim"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16B3"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2005, "years": [2008, 2012] },
   "signals": [
