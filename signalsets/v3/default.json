@@ -101,7 +101,7 @@
   "signals": [
     {"id": "MX5_MAP", "path": "Engine", "fmt": { "len": 16, "max": 4, "div": 1000, "unit": "volts" }, "name": "MAP voltage", "description": "A properly functioning sensor should read around 1 to 1.5 volts at idle."}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0415"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2022], "from": 2027 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0415"}, "freq": 1, "filter": { "to": 2005, "from": 2016 }, "dbgfilter": { "to": 2018, "years": [2022], "from": 2027 },
   "signals": [
     {"id": "MX5_EOP", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "kilopascal" }, "name": "Engine oil pressure"}
   ]},
@@ -133,7 +133,7 @@
   "signals": [
     {"id": "MX5_ETC_ACT_DEG", "path": "Engine", "fmt": { "len": 16, "max": 127.9, "div": 512, "unit": "degrees" }, "name": "Throttle position actual (degrees)"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0967"}, "freq": 0.25, "dbgfilter": { "to": 2005, "years": [2008, 2012], "from": 2016 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0967"}, "freq": 0.25, "filter": { "to": 2015 }, "dbgfilter": { "to": 2005, "years": [2008, 2012] },
   "signals": [
     {"id": "MX5_FAN3_SW", "path": "Engine", "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "offon" }, "name": "Cooling fan relay control"}
   ]},
@@ -296,11 +296,11 @@
   "signals": [
     {"id": "MX5_BAROMETRIC_P", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Barometric pressure"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "17B3"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2016 },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "17B3"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2013 },
   "signals": [
     {"id": "MX5_TRANS_T_V5", "path": "Transmission", "fmt": { "len": 8, "max": 371.4, "min": -57, "mul": 42, "div": 25, "add": -57, "unit": "fahrenheit" }, "name": "Transmission temperature v5"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "1E1C"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "1E1C"}, "freq": 1, "filter": { "to": 2005, "from": 2016 }, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "MX5_TRANS_T_V6", "path": "Transmission", "fmt": { "len": 16, "max": 500, "min": -500, "div": 16, "sign": true, "unit": "celsius" }, "name": "Transmission temperature v6"}
   ]},
