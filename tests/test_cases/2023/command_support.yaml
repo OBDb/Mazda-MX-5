@@ -76,6 +76,8 @@ supported_commands_by_ecu:
   - 7E0.7E8.2216E9:MX5_GEN_V
   - 7E0.7E8.22F433:MX5_BAROMETRIC_P
 unsupported_commands_by_ecu:
+  "6F1":
+  - 6F1.612.225AC3
   "726":
   - 726.72E.22D922:MX5_TP_FL_ND
   - 726.72E.22D923:MX5_TP_FR_ND
