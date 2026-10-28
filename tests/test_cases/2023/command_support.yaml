@@ -13,7 +13,9 @@ supported_commands_by_ecu:
   "726":
   - 726.72E.22DA05:MX5_BRAKE_SWITCH
   "7DF":
+  - 7DF.0104
   - 7DF.0106
+  - 7DF.010C
   - 7DF.0110
   - 7DF.01A6
   "7E0":
