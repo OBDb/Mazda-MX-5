@@ -45,5 +45,5 @@ test_cases:
     7E8044144800E
     CAN ERROR
 - expected_values:
-    EQ_RAT: 1.03131
-  response: '7E80441448402'
+    EQ_RAT: 1.03128
+  response: '7E80441448401'
