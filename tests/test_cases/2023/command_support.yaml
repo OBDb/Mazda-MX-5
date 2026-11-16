@@ -86,6 +86,7 @@ supported_commands_by_ecu:
   - 7E0.0106:SHRTFT1
   - 7E0.010C:RPM
   - 7E0.010D:VSS
+  - 7E0.010F:IAT
   - 7E0.0110:MAF
   - 7E0.0111:TP
   - 7E0.011F:RUNTM
@@ -189,7 +190,6 @@ unsupported_commands_by_ecu:
   - 726.72E.22D928:MX5_TT_RL_ND
   - 726.72E.22D929:MX5_TT_RR_ND
   "7E0":
-  - 7E0.010F:IAT
   - 7E0.7E8.220967
   - 7E0.7E8.22111F:MX5_EOT_2
   "7E1":
