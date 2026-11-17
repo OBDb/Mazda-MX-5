@@ -39,7 +39,7 @@
   "signals": [
     {"id": "MX5_FLV", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "liters" }, "name": "Fuel level"}
   ]},
-{ "hdr": "720", "rax": "728", "cmd": {"22": "C901"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2005, "years": [2008, 2012] },
+{ "hdr": "720", "rax": "728", "cmd": {"22": "C901"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2006, "years": [2008, 2011, 2012] },
   "signals": [
     {"id": "MX5_TP_FL", "path": "Tires", "fmt": {           "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
     {"id": "MX5_TP_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 51, "div": 5, "nullmin": 0, "nullmax": 51, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
