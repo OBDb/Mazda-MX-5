@@ -139,5 +139,5 @@ unsupported_commands_by_ecu:
   "7E0":
   - 7E0.7E8.220415
   "7E1":
-  - 7E1.7E9.2217B3|f=-2015:MX5_TRANS_T_V5
+  - 7E1.7E9.2217B3:MX5_TRANS_T_V5
   - 7E1.7E9.221E1C

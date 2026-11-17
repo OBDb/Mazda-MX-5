@@ -296,7 +296,7 @@
   "signals": [
     {"id": "MX5_BAROMETRIC_P", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Barometric pressure", "suggestedMetric": "barometricPressure"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "17B3"}, "freq": 1, "filter": { "to": 2015 }, "dbgfilter": { "to": 2013 },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "17B3"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2016 },
   "signals": [
     {"id": "MX5_TRANS_T_V5", "path": "Transmission", "fmt": { "len": 8, "max": 371.4, "min": -57, "mul": 42, "div": 25, "add": -57, "unit": "fahrenheit" }, "name": "Transmission temperature v5"}
   ]},
